@@ -1,4 +1,4 @@
-/* 내용참조 */
+﻿/* 내용참조 */
 메인화면 및 컨텍미에서 이메일 보내기(개발)
 http://www.adhamdannaway.com/
 
@@ -7,6 +7,22 @@ http://rotiboy.kr/
 
 전반적인 에니메이션
 http://www.tetrapodbrewing.com/
+
+css로 텍스트 에니메이션 효과 주기 
+https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Animations/Using_CSS_animations
+
+스크롤에 반응하는 제이쿼리
+http://rwdb.kr/scroll_plugin_jquery/
+
+이미지 날라오는 것 - skrollr
+https://codepen.io/tag/skrollr/
+
+그중, 컨텐츠
+https://codepen.io/talentedunicorn/pen/GCrmd 스크롤 내릴때 재정렬
+
+그중, 헤더부분
+https://codepen.io/benstr/pen/KlCyu
+
 
 /* 서브페이지참조 */
 www.oktomato.net
