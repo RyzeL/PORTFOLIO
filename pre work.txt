@@ -1,0 +1,36 @@
+/* 내용참조 */
+메인화면 및 컨텍미에서 이메일 보내기(개발)
+http://www.adhamdannaway.com/
+
+/* 디자인 배경 참조 */
+http://rotiboy.kr/
+
+/* 서브페이지참조 */
+www.oktomato.net
+
+/* 모션참조 */
+스크롤내릴때 모션
+https://thebodyride.com/betterthan/
+
+이미지호버시 확대되게
+http://www.happyturn.com/happyturns/
+
+
+/* 폰트 */
+스포카 한 산스 (개인, 상업무료) - 국문, 일문/ 오픈라이센스로 수정 가능.
+http://blog.naver.com/PostView.nhn?blogId=yangwonder&logNo=220587922722&categoryNo=0&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=postView
+
+Open Sans Condensed 오픈 산스 응축 - 영문
+https://fonts.google.com/specimen/Open+Sans+Condensed
+
+Amatic SC - 영문
+https://fonts.google.com/specimen/Amatic+SC
+
+
+/* 색상구성 */
+http://colormind.io/bootstrap/
+
+
+/* contents shadow */
+border-radius: 6px;
+box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
