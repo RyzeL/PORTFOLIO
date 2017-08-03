@@ -1,33 +1,36 @@
-/* ³»¿ëÂüÁ¶ */
-¸ŞÀÎÈ­¸é ¹× ÄÁÅØ¹Ì¿¡¼­ ÀÌ¸ŞÀÏ º¸³»±â(°³¹ß)
+/* ë‚´ìš©ì°¸ì¡° */
+ë©”ì¸í™”ë©´ ë° ì»¨í…ë¯¸ì—ì„œ ì´ë©”ì¼ ë³´ë‚´ê¸°(ê°œë°œ)
 http://www.adhamdannaway.com/
 
-/* µğÀÚÀÎ ¹è°æ ÂüÁ¶ */
+/* ë””ìì¸ ë°°ê²½ ì°¸ì¡° */
 http://rotiboy.kr/
 
-/* ¼­ºêÆäÀÌÁöÂüÁ¶ */
+ì „ë°˜ì ì¸ ì—ë‹ˆë©”ì´ì…˜
+http://www.tetrapodbrewing.com/
+
+/* ì„œë¸Œí˜ì´ì§€ì°¸ì¡° */
 www.oktomato.net
 
-/* ¸ğ¼ÇÂüÁ¶ */
-½ºÅ©·Ñ³»¸±¶§ ¸ğ¼Ç
+/* ëª¨ì…˜ì°¸ì¡° */
+ìŠ¤í¬ë¡¤ë‚´ë¦´ë•Œ ëª¨ì…˜
 https://thebodyride.com/betterthan/
 
-ÀÌ¹ÌÁöÈ£¹ö½Ã È®´ëµÇ°Ô
+ì´ë¯¸ì§€í˜¸ë²„ì‹œ í™•ëŒ€ë˜ê²Œ
 http://www.happyturn.com/happyturns/
 
 
-/* ÆùÆ® */
-½ºÆ÷Ä« ÇÑ »ê½º (°³ÀÎ, »ó¾÷¹«·á) - ±¹¹®, ÀÏ¹®/ ¿ÀÇÂ¶óÀÌ¼¾½º·Î ¼öÁ¤ °¡´É.
+/* í°íŠ¸ */
+ìŠ¤í¬ì¹´ í•œ ì‚°ìŠ¤ (ê°œì¸, ìƒì—…ë¬´ë£Œ) - êµ­ë¬¸, ì¼ë¬¸/ ì˜¤í”ˆë¼ì´ì„¼ìŠ¤ë¡œ ìˆ˜ì • ê°€ëŠ¥.
 http://blog.naver.com/PostView.nhn?blogId=yangwonder&logNo=220587922722&categoryNo=0&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=postView
 
-Open Sans Condensed ¿ÀÇÂ »ê½º ÀÀÃà - ¿µ¹®
+Open Sans Condensed ì˜¤í”ˆ ì‚°ìŠ¤ ì‘ì¶• - ì˜ë¬¸
 https://fonts.google.com/specimen/Open+Sans+Condensed
 
-Amatic SC - ¿µ¹®
+Amatic SC - ì˜ë¬¸
 https://fonts.google.com/specimen/Amatic+SC
 
 
-/* »ö»ó±¸¼º */
+/* ìƒ‰ìƒêµ¬ì„± */
 http://colormind.io/bootstrap/
 
 
