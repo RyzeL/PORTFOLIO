@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<!-- 사용자의 익스플로어 최신 버전 설정 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- 모바일 환경 설정 -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+<title>webTitle</title>
+
+
+<!--  웹 아이콘 폰트 css 연결  -->
+<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+<!-- 기본 css 연결 -->
+<link href="css/import.css" rel="stylesheet" type="text/css">
+
+
+<!--  1. prefixfree.min.js : 벤더프리픽스(브라우저 마다 보이게 하는 코드 설정 통일)  -->
+<!--  2. modernizr.custom.js : HTML5와 CSS3가 지원되지 않는 브라우저에서 작동하게 하거나 동작 않는
+CSS속성을 대체 할 수 있는 다른 형식으로 표현해 주는 기능 (IE8에서 작동 가능)  -->
+<!-- 3. html5shiv.min.js : HTML5의 시멘틱태그를 ie8에서 작동가능  -->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/prefixfree.min.js"></script> 
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script type="text/javascript" src="js/html5shiv.min.js"></script>
+<![endif]-->
+
+<!-- 기본 jQuery 연결 -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- 공통기능 구현 : header,sub,top -->
+<script type="text/javascript" src="js/default.js"></script>
+
+</head>
+
+
+<body> 
+
+<div id="wrap">
+
+    <div class="skip_navigation"><a href="#Con">본문 바로가기</a></div>
+    
+    <!-- header -->
+    <div id="header">
+        <div class="inner">
+            <h1><a href="#"><img src="images/logo.png" alt="JS"></a></h1>
+            <h2 class="blind">메인메뉴시작</h2>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="#">work</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- //header -->
+    
+    <!-- mainVisual -->
+    <div id="main">
+        <div class="inner">
+            <div class="img_box">
+                <img src="images/" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- //mainVisual -->
+    
+    <!-- mainVisualScript : - -->
+    <script type="text/javascript"></script>
+    
+    <!-- mainContents -->
+    <div id="Con">
+       <div class="inner"></div>
+    </div>
+    <!-- //mainContents -->
+        
+    <!-- mainContentsScript : - -->
+    <script type="text/javascript"></script>
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="inner">
+            <h2 class="blind">저작권자 정보</h2>
+            <div class="f_info_box">
+                <p class="copyright">© 2017 Jinseul Choi</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+        
+    <!-- topBtn -->
+        <a href="#top" class="top">top</a>
+    <!-- //topBtn --> 
+        
+</div>
+<!-- //wrap -->
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* ---------------------- sub_common ---------------------- */
+
+#subCon {
+    width: 100%;
+    margin: 70px 0 80px 0;
+    padding: 50px 25px;
+    border: 2px solid yellow;
+}
+
+#subCon > .inner {
+    width: 80%;
+    margin: 0 auto;
+    border: 2px dashed lightpink;
+    box-sizing: border-box;
+}
+
+#subCon > .inner .graphBox {
+    margin: 0 auto;
+    width: 775px;
+    height: 775px;
+    background: url(../images/bg_graph.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+#subCon > .inner .img_box img {
+    width: 100%;
+    
+}
+
+/* ---------------------- sub_contents ---------------------- */
