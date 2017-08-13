@@ -32,26 +32,6 @@
 <!-- default jQuery : header -->
 <script type="text/javascript" src="js/default.js"></script>
 
-<!-- mainVisualScript : - -->
-<script type="text/javascript">
-$(document).ready(function(){ 
-        //header           
-        /*$('#header').animate({ top:'0px' },500);*/
-
-        //mainVisual
-        /*$('.slice1').animate({ left:'0px' },1000);
-        $('.slice2').animate({ right:'0px' },1000);*/
-
-        
-        /*setTimeout(function(){
-        //mainCon
-        $('#mainCon_footerBox').animate({ bottom:'0px' },1500);
-        } , 3000);*/
-        
-});
-    // setTimeout(function(){},Time to wait);
-</script>
-
 </head>
 
 
@@ -124,21 +104,32 @@ who are developing hobbies._This is half-image that JINSEUL is working."></a>
                             <img src="images/img1_mainCon.jpg" alt="GAONN IT">
                             </a>
                         </div>
+                        <!-- hoverPage -->
                         <div class="hover_con_img_box">
                            <div class="inner_con_img_box
                                ">
-                               <span class="hover_list ml0">
-                                    <span class="ion-paper-airplane icon1"></span>&ensp;<a href="#">GO SITE</a>
-                                    <span class="hide_ko"><a href="#">사이트 바로가기</a></span>
-                                </span>
-                                
-                                <span class="hover_list">
-                                   <span class="ion-document-text icon1"></span>&ensp;
-                                    <a href="#">MORE</a>
-                                    <span class="hide_ko"><a href="#">더보기</a></span>
-                                </span>
+                               <ul>
+                               <li>
+                                  <a href="#">
+                                       <span class="hover_list ml0">
+                                            <span class="ion-paper-airplane icon1"></span>&ensp;GO SITE<br>
+                                            <span class="hide_ko">사이트 바로가기</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                   <a href="#">
+                                        <span class="hover_list">
+                                           <span class="ion-document icon2"></span>&ensp;
+                                            MORE<br>
+                                            <span class="hide_ko">더보기</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                </ul>
                             </div>
                         </div>
+                        <!-- //hoverPage -->
                         <h3><a href="#">PROJECT NAME_&ensp;<span class="nameTitle">GAONN IT Homepage Renewal</span></a></h3>
                         <p><a href="#">TASK_&ensp;<span class="nameTitle">Publishing</span></a></p>
                     </div>
@@ -150,6 +141,32 @@ who are developing hobbies._This is half-image that JINSEUL is working."></a>
                             <img src="images/img1_mainCon.jpg" alt="GAONN IT">
                             </a>
                         </div>
+                        <!-- hoverPage -->
+                        <div class="hover_con_img_box">
+                           <div class="inner_con_img_box
+                               ">
+                               <ul>
+                               <li>
+                                  <a href="#">
+                                       <span class="hover_list ml0">
+                                            <span class="ion-paper-airplane icon1"></span>&ensp;GO SITE<br>
+                                            <span class="hide_ko">사이트 바로가기</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                   <a href="#">
+                                        <span class="hover_list">
+                                           <span class="ion-document icon2"></span>&ensp;
+                                            MORE<br>
+                                            <span class="hide_ko">더보기</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- //hoverPage -->
                         <h3><a href="#">PROJECT NAME_&ensp;<span class="nameTitle">GAONN IT Homepage Renewal</span></a></h3>
                         <p><a href="#">TASK_&ensp;<span class="nameTitle">Publishing</span></a></p>
                     </div>
@@ -161,6 +178,32 @@ who are developing hobbies._This is half-image that JINSEUL is working."></a>
                             <img src="images/img1_mainCon.jpg" alt="GAONN IT">
                             </a>
                         </div>
+                        <!-- hoverPage -->
+                        <div class="hover_con_img_box">
+                           <div class="inner_con_img_box
+                               ">
+                               <ul>
+                               <li>
+                                  <a href="#">
+                                       <span class="hover_list ml0">
+                                            <span class="ion-paper-airplane icon1"></span>&ensp;GO SITE<br>
+                                            <span class="hide_ko">사이트 바로가기</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                   <a href="#">
+                                        <span class="hover_list">
+                                           <span class="ion-document icon2"></span>&ensp;
+                                            MORE<br>
+                                            <span class="hide_ko">더보기</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- //hoverPage -->
                         <h3><a href="#">PROJECT NAME_&ensp;<span class="nameTitle">GAONN IT Homepage Renewal</span></a></h3>
                         <p><a href="#">TASK_&ensp;<span class="nameTitle">Publishing</span></a></p>
                     </div>
@@ -171,7 +214,18 @@ who are developing hobbies._This is half-image that JINSEUL is working."></a>
     <!-- //mainContents -->
         
     <!-- mainContentsScript : - -->
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('.hover_con_img_box').hide();
+            $('.mainCon_list > li').on('mouseenter' , function(){
+                $('.hover_con_img_box' , this).stop().fadeIn(600);
+            });
+            $('.mainCon_list > li').on('mouseleave' , function(){
+                $('.hover_con_img_box' , this).stop().fadeOut(600);
+            });
+        
+        });
+    </script>
 
     <!-- footer -->
     <div id="footer">

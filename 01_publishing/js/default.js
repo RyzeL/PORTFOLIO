@@ -5,6 +5,9 @@ $(document).on('click', 'a[href="#"]', function(e) {
 
 /* ---------------------- header : 메뉴 설정 ---------------------- */
 $(function(){
+
+//    $('#header').animate({ marginTop:'0px' },500);
+    
     // Set options
     var options = {
                 offset: '#showHere',
