@@ -3,6 +3,15 @@
 
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
+@font-face {
+    font-family:'Raleway-Regular';
+    src:url('Raleway-Regular.eot?#iefix') fomat('embedded-opentype'), /* ie8 호환 */
+                url('../font/Raleway-Regular.woff') format('woff');  /* ie9이상 및 웹표준 브라우저(크롬,파이폭스,사파리 등)에 적용 */
+}
+
+
+
+
 
 
 /* ---------------------- reset ---------------------- */
@@ -61,9 +70,12 @@ img {
 }
 
 img {
-/*    vertical-align: top;*/
     max-width: 100%;
     vertical-align: middle;
+}
+
+.img_box img {
+    width: 100%;
 }
 
 table {
@@ -74,7 +86,7 @@ table {
 /* ---------------------- base ---------------------- */
 
 body {
-    font: 11px 'Nanum Gothic';
+    font: 11px 'Raleway-Regular','Nanum Gothic';
     color: #000;
     line-height: 100%;
     -webkit-text-size-adjust: none;/* 모바일 경우 */
@@ -619,8 +631,8 @@ input[type="checkbox"] {
 select { 
     padding-left:7px; 
     vertical-align: top;
-    /* --화살표 편집-- */
-    /* 브라우저 초기화 */
+    /* -- edit arrow -- */
+    /* Browser initialization */
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -628,13 +640,13 @@ select {
     background-image:url(../images/select_bg.png);
     background-repeat:no-repeat;
     background-position:right center;
-    /* --화살표 편집 끝-- */ 
+    /* -- the end edit arrow -- */ 
 }
 
 
 /* custom_point */
 .point_color0 {
-    color:#ee8617 !important;
+    color:#2574a9 !important;
 }
 
 
@@ -650,6 +662,48 @@ select {
 /* ---------------------- layout ---------------------- */
 
 /* header */
+#header {
+    position: fixed;
+    left: 0;
+    top: -9999px;
+    width: 100%;
+    height: 199px;
+    background: #fff;
+    z-index: 500;
+}
+
+#header > .inner {
+    position: relative;
+    max-width: 1152px;
+    height: 199px;
+    margin: 0 auto;
+    border: 1px solid #f20;
+    box-sizing: border-box;
+}
+
+#header > .inner > h1 {
+    margin-top: 70px;
+}
+
+nav {
+    position: absolute;
+    left: 250px;
+    top: 127px;
+}
+
+nav .gnb > li {
+    float: left;
+    margin-right: 99px;   
+}
+
+nav .gnb > li > a {
+    display: inline-block;
+    background: red;
+    color: #d7d7d7;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+}
 
 /**/
 

@@ -15,20 +15,37 @@
 <link href="css/import.css" rel="stylesheet" type="text/css">
 
 
-<!--  1. prefixfree.min.js : 벤더프리픽스(브라우저 마다 보이게 하는 코드 설정 통일)  -->
-<!--  2. modernizr.custom.js : HTML5와 CSS3가 지원되지 않는 브라우저에서 작동하게 하거나 동작 않는
-CSS속성을 대체 할 수 있는 다른 형식으로 표현해 주는 기능 (IE8에서 작동 가능)  -->
-<!-- 3. html5shiv.min.js : HTML5의 시멘틱태그를 ie8에서 작동가능  -->
+<!--  1. prefixfree.min.js : Vendor prefix(Unify code settings to make each browser visible.)  -->
+<!--  2. modernizr.custom.js : Does HTML5 and CSS3 work or do not work in unsupported browsers? Ability to render CSS properties in other formats that can be substituted (Works in IE8)  -->
+<!-- 3. html5shiv.min.js : HTML5 semantic tag works on ie8.  -->
 <!--[if lt IE 9]>
 <script type="text/javascript" src="js/prefixfree.min.js"></script> 
 <script type="text/javascript" src="js/modernizr.custom.js"></script>
 <script type="text/javascript" src="js/html5shiv.min.js"></script>
 <![endif]-->
 
-<!-- 기본 jQuery 연결 -->
+<!-- base jQuery -->
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
-<!-- 공통기능 구현 : header,sub,top -->
-<script type="text/javascript" src="js/default.js"></script>
+
+<!-- mainVisualScript : - -->
+<script type="text/javascript">
+$(document).ready(function(){ 
+        //header           
+        $('#header').animate({ top:'0px' },500);
+
+        //mainVisual
+        /*$('.slice1').animate({ left:'0px' },1000);
+        $('.slice2').animate({ right:'0px' },1000);*/
+
+        
+        /*setTimeout(function(){
+        //mainCon
+        $('#mainCon_footerBox').animate({ bottom:'0px' },1500);
+        } , 3000);*/
+        
+});
+    // setTimeout(function(){},Time to wait);
+</script>
 
 </head>
 
@@ -37,18 +54,18 @@ CSS속성을 대체 할 수 있는 다른 형식으로 표현해 주는 기능 (
 
 <div id="wrap">
 
-    <div class="skip_navigation"><a href="#Con">본문 바로가기</a></div>
+    <div class="skip_navigation"><a href="#Con">Contents shortcut</a></div>
     
     <!-- header -->
     <div id="header">
         <div class="inner">
             <h1><a href="#"><img src="images/logo.png" alt="JS"></a></h1>
-            <h2 class="blind">메인메뉴시작</h2>
+            <h2 class="blind">Start Main Menu</h2>
             <nav>
                 <ul class="gnb">
-                    <li><a href="#">work</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">contact me</a></li>
+                    <li><a href="#">WORK</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT ME</a></li>
                 </ul>
             </nav>
         </div>
@@ -56,17 +73,37 @@ CSS속성을 대체 할 수 있는 다른 형식으로 표현해 주는 기능 (
     <!-- //header -->
     
     <!-- mainVisual -->
-    <div id="main">
+    <div id="mainVis">
         <div class="inner">
-            <div class="img_box">
-                <img src="images/" alt="">
+           <div class="sliceFrame">
+                <ul class="sliceBox">
+                <li class="slice1">
+                    <ul class="slice_inner">
+                        <li></li>
+                        <li class="visuable">
+                            <div class="img_box">
+                                <a href="#"><img src="images/halfImg1_mainVis.png" alt="JINSEUL CHOI
+who are developing hobbies._This is half-image that JINSEUL is working."></a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="slice2">
+                    <ul class="slice_inner">
+                        <li class="visuable">
+                            <div class="img_box">
+                                <a href="#"><img src="images/halfImg2_mainVis.png" alt="JINSEUL CHOI
+who are developing hobbies._This is half-image that JINSEUL is working."></a>
+                            </div>
+                        </li>
+                        <li></li>
+                    </ul>
+                </li>
+            </ul>
             </div>
         </div>
     </div>
     <!-- //mainVisual -->
-    
-    <!-- mainVisualScript : - -->
-    <script type="text/javascript"></script>
     
     <!-- mainContents -->
     <div id="Con">

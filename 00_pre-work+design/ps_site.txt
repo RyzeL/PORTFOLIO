@@ -46,7 +46,7 @@ https://webdesign.tutsplus.com/ko/tutorials/how-to-create-a-fixed-header-which-a
 https://codepen.io/simpson77/pen/rVvrNW
 
 스크롤시 title 모션
-https://codepen.io/thanhnhan2tn/pen/BNqjLE
+https://codepen.io/ArielBeninca/pen/MYaaOZ?depth=everything&limit=all&order=popularity&page=5&q=skrollr&show_forks=false
 
 스크롤시 본문내용 모션
 https://codepen.io/julianlengfelder/pen/PZBEyv
