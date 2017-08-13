@@ -4,7 +4,6 @@
 #mainVis {
     clear: both;
     overflow: hidden;
-    margin-top: 199px;
 }
 
 #mainVis .inner {
@@ -20,7 +19,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 590px;
+    height: 2000px;
     /*border: 1px solid blue; 
     box-sizing: border-box;*/
 }
@@ -29,7 +28,7 @@
 .sliceBox .slice2 {
     float: left;
     width: 50%;
-    height: 590px;
+    height:2000px;
 
 }
 
@@ -40,12 +39,12 @@
 .slice_inner > li {
     float: left;
     width: 1%;
-    height: 590px;
+    height:2000px; /*590*/
 }
 
 .slice_inner > li.visuable {
     width: 99%;
-    height: 590px;
+    height:2000px;
 }
 
 /* css3 animation_className slice1,2 */

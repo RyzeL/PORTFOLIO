@@ -13,7 +13,8 @@
 <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
 <!-- 기본 css 연결 -->
 <link href="css/import.css" rel="stylesheet" type="text/css">
-
+<!-- header plugin css -->
+<link rel="stylesheet" href="css/headhesive.css">
 
 <!--  1. prefixfree.min.js : Vendor prefix(Unify code settings to make each browser visible.)  -->
 <!--  2. modernizr.custom.js : Does HTML5 and CSS3 work or do not work in unsupported browsers? Ability to render CSS properties in other formats that can be substituted (Works in IE8)  -->
@@ -26,12 +27,16 @@
 
 <!-- base jQuery -->
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- header jQuery plugin -->
+<script type="text/javascript" src="js/headhesive.js"></script>
+<!-- default jQuery : header -->
+<script type="text/javascript" src="js/default.js"></script>
 
 <!-- mainVisualScript : - -->
 <script type="text/javascript">
 $(document).ready(function(){ 
         //header           
-        $('#header').animate({ top:'0px' },500);
+        /*$('#header').animate({ top:'0px' },500);*/
 
         //mainVisual
         /*$('.slice1').animate({ left:'0px' },1000);
@@ -50,9 +55,8 @@ $(document).ready(function(){
 </head>
 
 
-<body> 
-
-<div id="wrap">
+<body id="top"> 
+    <div id="wrap">
 
     <div class="skip_navigation"><a href="#Con">Contents shortcut</a></div>
     
@@ -70,7 +74,16 @@ $(document).ready(function(){
             </nav>
         </div>
     </div>
+    
+    <a id="showHere"></a>
+
     <!-- //header -->
+    
+    
+
+
+
+    
     
     <!-- mainVisual -->
     <div id="mainVis">
@@ -128,8 +141,7 @@ who are developing hobbies._This is half-image that JINSEUL is working."></a>
     <!-- topBtn -->
         <a href="#top" class="top">top</a>
     <!-- //topBtn --> 
-        
-</div>
+
 <!-- //wrap -->
 
 </body>
