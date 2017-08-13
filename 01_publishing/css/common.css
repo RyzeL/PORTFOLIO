@@ -745,10 +745,10 @@ right: 2%;
 bottom: 5%;
 width: 50px;
 line-height: 50px;
-color: #fff !important;
+color: #cfcfcf !important;
 font-size: 13px;
 font-weight: 700;
-background:rgba(50,50,50,0.7);
+border: 1px solid #cfcfcf;
 border-radius: 50%;
 text-align: center;
 }

@@ -359,6 +359,7 @@ animation-duration:1.5s;
 }
 
 .mainCon_list > li .mainCon_list_inner {
+    position: relative;
     padding: 10px 10px 15px 10px;
 }
 
@@ -370,6 +371,50 @@ animation-duration:1.5s;
     color: #777;
     font-size: 12px;
     line-height: 22px;
+}
+
+.mainCon_list_inner .img_box {
+    box-sizing: border-box;
+    border-radius: 5px;
+/*    transition: all .5s;*/
+}
+
+.hover_con_img_box {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 354.234px;
+    height: 319.953px;
+    background: url(../images/bg_black.png);
+    background-repeat: repeat;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.inner_con_img_box {
+    text-align: center;
+}
+
+.inner_con_img_box > .hover_list {
+    display: inline-block;
+    margin-left: 120px;
+}
+
+.inner_con_img_box > .hover_list > a {
+    color:#fafafa;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.inner_con_img_box > .hover_list .hide_ko {
+    color: #fafafa;
+    font-size: 10px;
+    font-weight: 100;
+    line-height: 15px;
+}
+
+.hover_list .hide_ko {
+    display: block;
 }
 
 .nameTitle {
