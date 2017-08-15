@@ -1,12 +1,10 @@
-// 상단 튐 방지
+//Top protection
 $(document).on('click', 'a[href="#"]', function(e) {
     e.preventDefault();
 });
 
-/* ---------------------- header : 메뉴 설정 ---------------------- */
+/* ---------------------- headerSetting ---------------------- */
 $(function(){
-
-//    $('#header').animate({ marginTop:'0px' },500);
     
     // Set options
     var options = {
@@ -27,15 +25,15 @@ $(function(){
 });
 
 
-/* ---------------------- 서브 구현 ---------------------- */
+/* ---------------------- ContentsSetting ---------------------- */
 
 
-/* ---------------------- top버튼 구현 ---------------------- */
+/* ---------------------- topButton ---------------------- */
 
 $(function () {
 
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) { // 스크롤 내릴 표시
+        if ($(this).scrollTop() > 100) { //Scroll down
             $('.top').fadeIn();
         } else {
             $('.top').fadeOut();
@@ -45,7 +43,7 @@ $(function () {
     $('.top').click(function () {
         $('body,html').animate({
             scrollTop: 0
-        }, 800);  // 탑 이동 스크롤 속도
+        }, 800);  //Top Moving Scroll Speed
         return false;
     });
 
