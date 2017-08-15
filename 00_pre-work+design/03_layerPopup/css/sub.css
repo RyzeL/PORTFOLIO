@@ -503,7 +503,6 @@ font-size: 12px;
     margin: 0 auto;
     text-align: center;
     background-color: #fff;
-    border: 5px solid #3571B5;
     z-index: 10;
 }
 
@@ -526,19 +525,9 @@ font-size: 12px;
 
 a.cbtn {
     display: inline-block;
+    width: 25px;
     height: 25px;
     padding: 0 14px 0;
-    border: 1px solid #304a8a;
-    background-color: #3f5a9d;
-    font-size: 13px;
-    color: #fff;
-    line-height: 25px;
-}
-
-a.cbtn:hover {
-    border: 1px solid #091940;
-    background-color: #1f326a;
-    color: #fff;
 }
 
 a.btn-example {
