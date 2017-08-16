@@ -126,5 +126,19 @@ https://www.w3schools.com/asp/asp_incfiles.asp
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-이메일 보내기
+이메일 보내기 node.js(nodemailer) 
 https://www.w3schools.com/nodejs/nodejs_email.asp
+
+http://blog.saltfactory.net/send-mail-using-nodemailer/
+
+https://jaewonism.com/posts/16?page=1
+
+http://avilos.codes/server/nodejs/node-js-%EC%9D%B4%EB%A9%94%EC%9D%BC%EB%B3%B4%EB%82%B4%EA%B8%B0nodemailer/
+
+http://crazia.tistory.com/entry/Nodejs-%EC%9D%B4%EB%A9%94%EC%9D%BC-%EB%B3%B4%EB%82%B4%EB%8A%94-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%ED%98%84-%EC%89%BD%EA%B2%8C-%EB%94%B0%EB%9D%BC%ED%95%98%EA%B8%B0
+
+http://nubiz.tistory.com/703
+
+
+(Node.js와 jQuery로 HTML 변환하기)
+http://2ality.com/2012/02/jsdom.html

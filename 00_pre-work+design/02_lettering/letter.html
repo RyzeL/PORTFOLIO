@@ -14,23 +14,7 @@ This web page has been developed by Wani.
 <link href="css/normalize.min.css" rel="stylesheet" type="text/css">
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script type="text/javascript">
-$(function(){
-    var pathes = $('#XignifyLogo').find('path');
-    pathes.each(function( i, path ) {
-        var total_length = path.getTotalLength(); // 1번 부분 : 각 path의 길이(length)를 구한다.
- 
-        path.style.strokeDasharray = total_length + " " + total_length; // 2번 부분 : stroke-dasharray를 path의 길이(length)로 잡는다.
-        path.style.strokeDashoffset = total_length; // 3번 부분 : stroke-offset을 path의 길이로 잡는다. _여기까지 하면 기존의 path가 투명하게 안보일 것입니다.
- 
-        // 4번 부분 애니메이션으로 stroke-offset을 0으로 가깝게 이동시킵니다.
-        $(path).animate({
-            "strokeDashoffset" : 0
-        }, 1500);
-    });
-    //}
-})
-</script>
+
 </head>
 <body>
 <div class="pics">
@@ -65,5 +49,23 @@ $(function(){
 		</g>
 	</svg>
 </div>
+
+<script type="text/javascript">
+$(function(){
+    var pathes = $('#XignifyLogo').find('path');
+    pathes.each(function( i, path ) {
+        var total_length = path.getTotalLength(); // 1번 부분 : 각 path의 길이(length)를 구한다.
+ 
+        path.style.strokeDasharray = total_length + " " + total_length; // 2번 부분 : stroke-dasharray를 path의 길이(length)로 잡는다.
+        path.style.strokeDashoffset = total_length; // 3번 부분 : stroke-offset을 path의 길이로 잡는다. _여기까지 하면 기존의 path가 투명하게 안보일 것입니다.
+ 
+        // 4번 부분 애니메이션으로 stroke-offset을 0으로 가깝게 이동시킵니다.
+        $(path).animate({
+            "strokeDashoffset" : 0
+        }, 1500);
+    });
+    //}
+})
+</script>
 </body>
 </html>
