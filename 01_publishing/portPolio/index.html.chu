@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<!-- 사용자의 익스플로어 최신 버전 설정 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- 모바일 환경 설정 -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+<title>webTitle</title>
+
+
+<!--  웹 아이콘 폰트 css 연결  -->
+<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+<!-- 기본 css 연결 -->
+<link href="css/import.css" rel="stylesheet" type="text/css">
+<!-- header plugin css -->
+<link rel="stylesheet" href="css/headhesive.css">
+
+<!--  1. prefixfree.min.js : Vendor prefix(Unify code settings to make each browser visible.)  -->
+<!--  2. modernizr.custom.js : Does HTML5 and CSS3 work or do not work in unsupported browsers? Ability to render CSS properties in other formats that can be substituted (Works in IE8)  -->
+<!-- 3. html5shiv.min.js : HTML5 semantic tag works on ie8.  -->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/prefixfree.min.js"></script> 
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script type="text/javascript" src="js/html5shiv.min.js"></script>
+<![endif]-->
+
+<!-- base jQuery -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- header jQuery plugin -->
+<script type="text/javascript" src="js/headhesive.js"></script>
+<!-- default jQuery : header -->
+<script type="text/javascript" src="js/default.js"></script>
+
+</head>
+
+
+<body id="top"> 
+    <div id="wrap">
+
+    <div class="skip_navigation"><a href="#Con">Contents shortcut</a></div>
+    
+    <!-- header -->
+    <div id="header">
+        <div class="inner">
+            <h1><a href="#"><img src="images/logo.png" alt="JS"></a></h1>
+            <h2 class="blind">Start Main Menu</h2>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="#">WORK</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT ME</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <a id="showHere"></a>
+
+    <!-- //header -->
+    
+    <!-- mainVisual -->
+    <div id="mainVis">
+        <div class="inner">
+           <div class="sliceFrame">
+                <ul class="sliceBox">
+                <li class="slice1">
+                    <ul class="slice_inner">
+                        <li></li>
+                        <li class="visuable">
+                            <div class="img_box">
+                                <a href="#"><img src="images/halfImg1_mainVis.png" alt="JINSEUL CHOI
+who are developing hobbies._This is half-image that JINSEUL is working."></a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="slice2">
+                    <ul class="slice_inner">
+                        <li class="visuable">
+                            <div class="img_box">
+                                <a href="#"><img src="images/halfImg2_mainVis.png" alt="JINSEUL CHOI
+who are developing hobbies._This is half-image that JINSEUL is working."></a>
+                            </div>
+                        </li>
+                        <li></li>
+                    </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    <!-- //mainVisual -->
+    
+    <!-- mainContents -->
+    <div id="Con">
+       <div class="inner">
+           <h2><span>My Latest Project</span></h2>
+           <ul class="mainCon_list">
+               <li>
+                   <div class="mainCon_list_inner">
+                        <div class="img_box">
+                           <a href="#">
+                            <img src="images/img1_mainCon.jpg" alt="GAONN IT">
+                            </a>
+                        </div>
+                        <!-- hoverPage -->
+                        <div class="hover_con_img_box">
+                           <div class="inner_con_img_box
+                               ">
+                               <ul>
+                               <li>
+                                  <a href="#">
+                                       <span class="hover_list ml0">
+                                            <span class="ion-paper-airplane icon1"></span>&ensp;GO SITE<br>
+                                            <span class="hide_ko">사이트 바로가기</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                   <a href="#">
+                                        <span class="hover_list">
+                                           <span class="ion-document icon2"></span>&ensp;
+                                            MORE<br>
+                                            <span class="hide_ko">더보기</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- //hoverPage -->
+                        <h3><a href="#">PROJECT NAME_&ensp;<span class="nameTitle">GAONN IT Homepage Renewal</span></a></h3>
+                        <p><a href="#">TASK_&ensp;<span class="nameTitle">Publishing</span></a></p>
+                    </div>
+               </li>
+               <li>
+                   <div class="mainCon_list_inner">
+                        <div class="img_box">
+                           <a href="#">
+                            <img src="images/img1_mainCon.jpg" alt="GAONN IT">
+                            </a>
+                        </div>
+                        <!-- hoverPage -->
+                        <div class="hover_con_img_box">
+                           <div class="inner_con_img_box
+                               ">
+                               <ul>
+                               <li>
+                                  <a href="#">
+                                       <span class="hover_list ml0">
+                                            <span class="ion-paper-airplane icon1"></span>&ensp;GO SITE<br>
+                                            <span class="hide_ko">사이트 바로가기</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                   <a href="#">
+                                        <span class="hover_list">
+                                           <span class="ion-document icon2"></span>&ensp;
+                                            MORE<br>
+                                            <span class="hide_ko">더보기</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- //hoverPage -->
+                        <h3><a href="#">PROJECT NAME_&ensp;<span class="nameTitle">GAONN IT Homepage Renewal</span></a></h3>
+                        <p><a href="#">TASK_&ensp;<span class="nameTitle">Publishing</span></a></p>
+                    </div>
+               </li>
+               <li>
+                   <div class="mainCon_list_inner">
+                        <div class="img_box">
+                           <a href="#">
+                            <img src="images/img1_mainCon.jpg" alt="GAONN IT">
+                            </a>
+                        </div>
+                        <!-- hoverPage -->
+                        <div class="hover_con_img_box">
+                           <div class="inner_con_img_box
+                               ">
+                               <ul>
+                               <li>
+                                  <a href="#">
+                                       <span class="hover_list ml0">
+                                            <span class="ion-paper-airplane icon1"></span>&ensp;GO SITE<br>
+                                            <span class="hide_ko">사이트 바로가기</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                   <a href="#">
+                                        <span class="hover_list">
+                                           <span class="ion-document icon2"></span>&ensp;
+                                            MORE<br>
+                                            <span class="hide_ko">더보기</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- //hoverPage -->
+                        <h3><a href="#">PROJECT NAME_&ensp;<span class="nameTitle">GAONN IT Homepage Renewal</span></a></h3>
+                        <p><a href="#">TASK_&ensp;<span class="nameTitle">Publishing</span></a></p>
+                    </div>
+               </li>
+           </ul>
+       </div>
+    </div>
+    <!-- //mainContents -->
+        
+    <!-- mainContentsScript : - -->
+    <script type="text/javascript">
+        $(function(){
+            $('.hover_con_img_box').hide();
+            $('.mainCon_list > li').on('mouseenter' , function(){
+                $('.hover_con_img_box' , this).stop().fadeIn(600);
+            });
+            $('.mainCon_list > li').on('mouseleave' , function(){
+                $('.hover_con_img_box' , this).stop().fadeOut(600);
+            });
+        
+        });
+    </script>
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="inner">
+            <h2 class="blind">저작권자 정보</h2>
+            <div class="f_info_box">
+                <p class="copyright">© 2017 Jinseul Choi</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+        
+    <!-- topBtn -->
+        <a href="#top" class="top">top</a>
+    <!-- //topBtn --> 
+</div>
+<!-- //wrap -->
+
+</body>
+</html>
