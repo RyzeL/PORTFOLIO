@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>한국원자력연구소_환경방사능실험공정관리시스템</title>
+
+<link href="css/sub.css" rel="stylesheet" type="text/css">
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/prefixfree.min.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script type="text/javascript" src="js/html5shiv.min.js"></script>
+<![endif]-->
+<!--  1. prefixfree.min.js - 벤더프리픽스(브라우저 마다 보이게 하는 코드 설정)를 따로 설정하지 않아도 된다.  -->
+<!--  2. modernizr.custom.js - HTML5와 CSS3가 지원되지 않는 브라우저에서 작동하게 하거나 동작 않는
+CSS속성을 대체 할 수 있는 다른 형식으로 표현해 주는 기능 : IE8에서도 작동되게 해준다.  -->
+<!-- 3. HTML5의 시멘틱태그를 ie8에서 작동할 수 있게 해준다.  -->
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- 텝 메뉴 스크립트 -->
+<script type="text/javascript">
+    
+$(function() {
+
+    $(".tab_content").hide(); //컨텐츠 숨기고
+    $("ul.tabs li:first").addClass("active").show(); 
+    $(".tab_content:first").show(); //첫번째 탭 보이고
+
+    $("ul.tabs li").on('click' , function() {
+        $("ul.tabs li").removeClass("active"); //액티브 클래스 먼저 제거후
+        $(this).addClass("active"); // 선택된 탭에 액티브 클래스 추가
+        $(".tab_content").hide(); //모든 탭 컨텐츠 숨기기
+
+        var activeTab = $(this).find("a").attr("href"); //선택된 탭과 내용의 아이디 값의 href을 찾은 후
+        $(activeTab).fadeIn(); //액티브 아이디값을 페이드 인 시킨다. 
+        return false;
+    });
+
+});
+    
+</script>
+    
+    
+
+
+<!-- 레이어팝업 스크립트 -->
+<script type="text/javascript">
+
+//메세지
+$(function(){
+    
+    $('.popup_bgwrap').hide();
+
+   //받은메세지 탭에 있는 팝업
+    $('.btn_answer').click(function(){
+        $('.p1').show();
+    });
+
+    $('.btn_close').click(function(){
+        $('.popup_bgwrap').hide();
+    });
+    
+    $('.btn_no').click(function(){
+        $('.popup_bgwrap').hide();
+    });
+
+    $('.message_con1').on('click' , function(){
+        $('.p1').show();
+    });
+            
+    //메세지 펼침 구현
+    $('.add_txt_message').hide();
+
+    $('.btn_popup_answer').on('click' , function(){
+        $('.icon_arrow_b').toggleClass('icon_arrow_t' , 600);
+        $('.bg_message').toggleClass('bg_message_edit' , 600);
+        $('.add_txt_message').toggle();
+        return false;
+    });
+        
+    //보낸메세지 탭에있는 팝업
+    $('.message_con2').on('click' , function(){
+        $('.p2').show();
+    });
+
+    //삭제구현
+    $('.btn_cancel').on('click' , function(){
+        $('.p3').show();
+    });
+         
+});
+
+</script>
+
+</head>
+
+
+<body>
+
+<div id="wrap">
+
+    <div class="skip_navigation"><a href="#adm_subCon">본문 바로가기</a></div>
+    
+    <div id="header">
+        <div class="inner">
+            <h1><a href="index.html"><img src="images/logo.png" alt="한국원자력연구소_환경방사능실험공정관리시스템"></a></h1>
+            <h2 class="blind">메인메뉴시작</h2>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="sub1-1.html"><img src="images/gnb1.jpg" onmouseover="src='images/gnb1_on.jpg'" onmouseout="src='images/gnb1.jpg'" alt="작업진행현황"></a></li>
+                    <li><a href="sub2-1.html"><img src="images/gnb2_on.jpg" alt="메세지"></a></li>
+                    <li><a href="sub3-1.html"><img src="images/gnb3.jpg" onmouseover="src='images/gnb3_on.jpg'" onmouseout="src='images/gnb3.jpg'" alt="알림"></a></li>
+                    <li><a href="sub4-1.html"><img src="images/gnb4.jpg" onmouseover="src='images/gnb4_on.jpg'" onmouseout="src='images/gnb4.jpg'" alt="업무분장"></a></li>
+                    <li><a href="sub5-1.html"><img src="images/gnb5.jpg" onmouseover="src='images/gnb5_on.jpg'" onmouseout="src='images/gnb5.jpg'" alt="나가기"></a></li>
+                    <li class="gnb_list"><a href="sub6-1.html"><img src="images/gnb6.jpg" onmouseover="src='images/gnb6_on.jpg'" onmouseout="src='images/gnb6.jpg'" alt="정보변경"></a></li>
+                </ul>
+            </nav>
+            
+        </div>
+    </div>
+    
+    <!-- admin_sub -->
+    
+    <div id="normal_subVis">
+        <div class="subVis_inner subVis_message">
+            <p class="page_guideline"><span class="gohome"></span><span class="arrow_right"></span>메세지</p>
+            <h2>메세지</h2>
+        </div>
+    </div>
+    
+    
+    
+    <div id="normal_subCon">
+            <div class="subCon_inner">
+
+                <!--탭 메뉴 영역 -->
+                <ul class="tabs">
+                    <li><a href="#tab1">받은메세지</a></li>
+                    <li><a href="#tab2">보낸메세지</a></li>
+                    <li><a href="#tab3">메세지 작성</a></li>
+                </ul>
+
+                <!--탭 콘텐츠 영역 -->
+                <div class="tab_container">
+
+                    <div id="tab1" class="tab_content">
+
+                        <div class="btn_cancel_box">
+                <a href="#" class="btn_white2 btn_answer">답장</a>
+                <a href="#" class="btn_white4 btn_cancel">삭제</a>
+            </div>
+                        <div class="list_box">
+                <table class="list_t">
+                    <caption class="blind">받은메세지테이블</caption>
+                    <colgroup>
+                        <col width="7%">
+                        <col width="13%">
+                        <col width="60%">
+                        <col width="20%">
+                    </colgroup>
+                    
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                <input type="checkbox" id="all_sel" name="All"><label for="all_sel" class="blind">전체선택하기</label>
+                            </th>
+                            <th scope="col">보낸사람</th>
+                            <th scope="col">내용</th>
+                            <th scope="col" class="bor_r_0">날짜</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                       
+                       <tr>
+                            <td><input type="checkbox" id="indi_sel1" name="In1"><label for="indi_sel1" class="blind">선택하기</label></td>
+                            <td>홍길동</td>
+                            <td><a href="#" class="message_con1">간략내용</a></td>
+                            <td class="bor_r_0">2017-06-02</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><input type="checkbox" id="indi_sel2" name="In2"><label for="indi_sel2" class="blind">선택하기</label></td>
+                            <td>홍길동</td>
+                            <td><a href="#" class="message_con1">간략내용</a></td>
+                            <td class="bor_r_0">2017-06-02</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><input type="checkbox" id="indi_sel3" name="In3"><label for="indi_sel3" class="blind">선택하기</label></td>
+                            <td>홍길동</td>
+                            <td><a href="#" class="message_con1">간략내용</a></td>
+                            <td class="bor_r_0">2017-06-02</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><input type="checkbox" id="indi_sel4" name="In4"><label for="indi_sel4" class="blind">선택하기</label></td>
+                            <td>홍길동</td>
+                            <td><a href="#" class="message_con1">간략내용</a></td>
+                            <td class="bor_r_0">2017-06-02</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><input type="checkbox" id="indi_sel5" name="In5"><label for="indi_sel5" class="blind">선택하기</label></td>
+                            <td>홍길동</td>
+                            <td><a href="#" class="message_con1">간략내용</a></td>
+                            <td class="bor_r_0">2017-06-02</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><input type="checkbox" id="indi_sel6" name="In6"><label for="indi_sel6" class="blind">선택하기</label></td>
+                            <td>홍길동</td>
+                            <td><a href="#" class="message_con1">간략내용</a></td>
+                            <td class="bor_r_0">2017-06-02</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><input type="checkbox" id="indi_sel7" name="In7"><label for="indi_sel7" class="blind">선택하기</label></td>
+                            <td>홍길동</td>
+                            <td><a href="#" class="message_con1">간략내용</a></td>
+                            <td class="bor_r_0">2017-06-02</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><input type="checkbox" id="indi_sel8" name="In8"><label for="indi_sel8" class="blind">선택하기</label></td>
+                            <td>홍길동</td>
+                            <td><a href="#" class="message_con1">간략내용</a></td>
+                            <td class="bor_r_0">2017-06-02</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><input type="checkbox" id="indi_sel9" name="In9"><label for="indi_sel9" class="blind">선택하기</label></td>
+                            <td>홍길동</td>
+                            <td><a href="#" class="message_con1">간략내용</a></td>
+                            <td class="bor_r_0">2017-06-02</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><input type="checkbox" id="indi_sel10" name="In10"><label for="indi_sel10" class="blind">선택하기</label></td>
+                            <td>홍길동</td>
+                            <td><a href="#" class="message_con1">간략내용</a></td>
+                            <td class="bor_r_0">2017-06-02</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+                        <div class="num_box">
+                
+                    <a href="#" class="pd_t_0 pd_b_0 pd_l_0"><img src="images/btn_play_ppre.png" class="ver_middle" alt="처음으로가기"></a>
+                    <a href="#" class="pd_t_0 pd_b_0 pd_l_0"><img src="images/btn_play_pre.png" alt="이전으로가기"></a>
+                    <a href="#" class="on">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <a href="#">10</a>
+                    <a href="#" class="pd_t_0 pd_b_0"><img src="images/btn_play_next.png" alt="다음으로가기"></a>
+                    <a href="#" class="pd_t_0 pd_b_0 pd_l_0"><img src="images/btn_play_nnext.png" alt="마지막으로가기"></a>
+                
+            </div>
+                    </div>
+                    
+            <div id="tab2" class="tab_content">
+                         <div class="btn_cancel_box">
+                <a href="#" class="btn_white4 btn_cancel">삭제</a>
+            </div>
+                        <div class="list_box">
+                <table class="list_t">
+                    <caption class="blind">받은메세지테이블</caption>
+                    <colgroup>
+                        <col width="7%">
+                        <col width="13%">
+                        <col width="60%">
+                        <col width="20%">
+                    </colgroup>
+                    
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                <input type="checkbox" id="all_sel2" name="All"><label for="all_sel2" class="blind">전체선택하기</label>
+                            </th>
+                            <th scope="col">보낸사람</th>
+                            <th scope="col">내용</th>
+                            <th scope="col" class="bor_r_0">날짜</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" id="indi_sel11" name="In11"><label for="indi_sel11" class="blind">선택하기</label></td>
+                            <td>홍길동</td>
+                            <td><a href="#" class="message_con2">간략내용</a></td>
+                            <td class="bor_r_0">2017-06-02</td>
+                        </tr>
+                        
+                         <tr>
+                            <td><input type="checkbox" id="indi_sel12" name="In12"><label for="indi_sel12" class="blind">선택하기</label></td>
+                            <td>홍길동</td>
+                            <td><a href="#" class="message_con2">간략내용</a></td>
+                            <td class="bor_r_0">2017-06-02</td>
+                        </tr>
+                        
+                         <tr>
+                            <td><input type="checkbox" id="indi_sel13" name="In13"><label for="indi_sel13" class="blind">선택하기</label></td>
+                            <td>홍길동</td>
+                            <td><a href="#" class="message_con2">간략내용</a></td>
+                            <td class="bor_r_0">2017-06-02</td>
+                        </tr>
+                        
+                         <tr>
+                            <td><input type="checkbox" id="indi_sel14" name="In14"><label for="indi_sel14" class="blind">선택하기</label></td>
+                            <td>홍길동</td>
+                            <td><a href="#" class="message_con2">간략내용</a></td>
+                            <td class="bor_r_0">2017-06-02</td>
+                        </tr>
+                        
+                         <tr>
+                            <td><input type="checkbox" id="indi_sel15" name="In15"><label for="indi_sel15" class="blind">선택하기</label></td>
+                            <td>홍길동</td>
+                            <td><a href="#" class="message_con2">간략내용</a></td>
+                            <td class="bor_r_0">2017-06-02</td>
+                        </tr>
+                        
+                         <tr>
+                            <td><input type="checkbox" id="indi_sel16" name="In16"><label for="indi_sel16" class="blind">선택하기</label></td>
+                            <td>홍길동</td>
+                            <td><a href="#" class="message_con2">간략내용</a></td>
+                            <td class="bor_r_0">2017-06-02</td>
+                        </tr>
+                        
+                         <tr>
+                            <td><input type="checkbox" id="indi_sel17" name="In17"><label for="indi_sel17" class="blind">선택하기</label></td>
+                            <td>홍길동</td>
+                            <td><a href="#" class="message_con2">간략내용</a></td>
+                            <td class="bor_r_0">2017-06-02</td>
+                        </tr>
+                        
+                         <tr>
+                            <td><input type="checkbox" id="indi_sel18" name="In18"><label for="indi_sel18" class="blind">선택하기</label></td>
+                            <td>홍길동</td>
+                            <td><a href="#" class="message_con2">간략내용</a></td>
+                            <td class="bor_r_0">2017-06-02</td>
+                        </tr>
+                        
+                         <tr>
+                            <td><input type="checkbox" id="indi_sel19" name="In19"><label for="indi_sel19" class="blind">선택하기</label></td>
+                            <td>홍길동</td>
+                            <td><a href="#" class="message_con2">간략내용</a></td>
+                            <td class="bor_r_0">2017-06-02</td>
+                        </tr>
+                        
+                         <tr>
+                            <td><input type="checkbox" id="indi_sel20" name="In20"><label for="indi_sel20" class="blind">선택하기</label></td>
+                            <td>홍길동</td>
+                            <td><a href="#" class="message_con2">간략내용</a></td>
+                            <td class="bor_r_0">2017-06-02</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+                        <div class="num_box">
+                
+                    <a href="#" class="pd_t_0 pd_b_0 pd_l_0"><img src="images/btn_play_ppre.png" class="ver_middle" alt="처음으로가기"></a>
+                    <a href="#" class="pd_t_0 pd_b_0 pd_l_0"><img src="images/btn_play_pre.png" alt="이전으로가기"></a>
+                    <a href="#" class="on">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <a href="#">10</a>
+                    <a href="#" class="pd_t_0 pd_b_0"><img src="images/btn_play_next.png" alt="다음으로가기"></a>
+                    <a href="#" class="pd_t_0 pd_b_0 pd_l_0"><img src="images/btn_play_nnext.png" alt="마지막으로가기"></a>
+                
+            </div>
+                       
+                    </div>
+                    
+            <div id="tab3" class="tab_content">
+                   <div class="detailwork_side" style="height:543px; overflow-y:auto; overflow-x:hidden;">
+                       <div class="detailwork_list_box">
+                            <table class="list_t">
+                                <caption class="blind">받는사람테이블</caption>
+                                
+                                <colgroup>
+                                    <col >
+                                    <col >
+                                </colgroup>
+                                
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="bor_l_1">
+                                            <input type="checkbox" id="Alall" name="Ala"><label for="Alall" class="blind">모두선택하기</label>
+                                        </th>
+                                        <th>받는사람</th>
+                                    </tr>
+                                </thead>
+                                
+                                <tbody>
+                                    <tr>
+                                        <td class="bor_l_1">
+                                            <input type="checkbox" id="N1" name="N_1"><label for="N1" class="blind">선택하기</label>
+                                        </td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="bor_l_1">
+                                            <input type="checkbox" id="N2" name="N_2"><label for="N2" class="blind">선택하기</label>
+                                        </td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="bor_l_1">
+                                            <input type="checkbox" id="N3" name="N_3"><label for="N3" class="blind">선택하기</label>
+                                        </td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="bor_l_1">
+                                            <input type="checkbox" id="N4" name="N_4"><label for="N4" class="blind">선택하기</label>
+                                        </td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="bor_l_1">
+                                            <input type="checkbox" id="N5" name="N_5"><label for="N5" class="blind">선택하기</label>
+                                        </td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="bor_l_1">
+                                            <input type="checkbox" id="N6" name="N_6"><label for="N6" class="blind">선택하기</label>
+                                        </td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="bor_l_1">
+                                            <input type="checkbox" id="N7" name="N_7"><label for="N7" class="blind">선택하기</label>
+                                        </td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="bor_l_1">
+                                            <input type="checkbox" id="N8" name="N_8"><label for="N8" class="blind">선택하기</label>
+                                        </td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="bor_l_1">
+                                            <input type="checkbox" id="N9" name="N_9"><label for="N9" class="blind">선택하기</label>
+                                        </td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="bor_l_1">
+                                            <input type="checkbox" id="N10" name="N_10"><label for="N10" class="blind">선택하기</label>
+                                        </td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="bor_l_1">
+                                            <input type="checkbox" id="N11" name="N_11"><label for="N11" class="blind">선택하기</label>
+                                        </td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="bor_l_1">
+                                            <input type="checkbox" id="N12" name="N_12"><label for="N12" class="blind">선택하기</label>
+                                        </td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    
+                                </tbody>
+                                
+                            </table>
+                       
+                           
+                       </div>
+                    </div>
+                    <div class="detailwork_next">
+                       
+                        <div class="detailwork_list_box">
+                            <table class="list_t">
+                           <caption class="blind">받는사람메세지보내기테이블</caption>
+                           
+                           <colgroup>
+                               <col width="20%">
+                               <col width="80%">
+                           </colgroup>
+                           
+                           <thead class="color_point3">
+                               <tr>
+                                   <th scope="col" class="bor_r_0 bor_l_1"><span class="icon_bold_r"></span>받는사람</th>
+                                   <th class="txt_l">
+                                       <input type="text" id="Receive" class="edited_input" name="R" placeholder="홍길동1, 홍길동2"><label for="Receive" class="blind">받는사람 입력</label>
+                                   </th>
+                               </tr>
+                           </thead>
+                           
+                           <tbody>
+                               <tr>
+                                   <td colspan="2" class="bor_l_1">
+                                       <textarea name="" id="" cols="90" rows="26" class="w90 bor_0"></textarea>
+                                   </td>
+                               </tr>
+                           </tbody>
+                           
+                       </table>
+                        </div>
+                    </div>   
+                    
+                    <div class="finish_btnbox">
+                       <a href="#" class="btn_point_size">보내기</a>
+                    </div>
+            </div>
+               </div>
+            </div>
+    </div>
+    
+    </div> <!--//wrap-->
+<div id="footer">
+            <div class="inner">
+                <img src="images/f_logo.png" class="f_logo" alt="한국원자력연구원로고">
+                <h2 class="blind">저작권자 정보</h2>
+                <div class="f_info_box">
+                    <p class="team_name">Environmental Radioactivity Assessment Team</p>
+                    <p class="f_info">34057 대전광역시 유성구 대덕대로 989번길 111    Tel: +82-(0)42-868-8961   Fax: +82-(0)42-862-3708</p>
+                    <p class="f_info">copyrightⓒ ALL RIGHTS RESERVED</p>
+                </div>
+            </div>
+        </div>
+
+<!-- 받은메세지텝_보낸,보낼메세지_레이어팝업 -->
+<div class="popup_bgwrap p1">
+<div class="bg_message">
+    <h2>
+        보낸 메세지
+        <a href="#"><img src="images/btn_close.gif" class="btn_close" alt="닫기"></a>
+    </h2>
+    
+    <div class="message_coment">
+        <h3>
+            <span class="btn_checked"></span><span class="color_point1">홍길동</span>님이 보낸 메세지<span class="message_date">2017-05-19</span>
+        </h3>
+    
+    
+        <div class="message_box">
+            안녕하세요.
+        </div>
+    </div>
+    
+    <div class="btn_check_box pb20">
+        <a href="#" class="btnpopup_point btn_check">확인</a> <a href="#" class="btnpopup_point2 btn_popup_answer">답장&ensp;<span class="icon_arrow_b"></span></a>
+    </div>
+    
+    <div class="add_txt_message">
+        <h2>
+            보낼 메세지
+        </h2>
+        <div class="message_coment">
+            <h3>
+                <span class="btn_checked"></span><span class="color_point1">홍길동</span>님에게 보낼 메세지<span class="message_date">2017-05-19</span>
+            </h3>
+
+
+            <textarea name="" id="" cols="50" rows="10" placeholder="안녕하세요." class="message_box w90"></textarea>
+
+        </div>
+
+        <div class="btn_check_box">
+            <a href="#" class="btnpopup_point btn_check">보내기</a>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!-- 보낸메세지텝_보낸메세지_레이어팝업 -->
+<div class="popup_bgwrap p2">
+<div class="bg_message">
+    <h2>
+        보낸 메세지
+        <a href="#"><img src="images/btn_close.gif" class="btn_close" alt="닫기"></a>
+    </h2>
+    
+    <div class="message_coment">
+        <h3>
+            <span class="btn_checked"></span><span class="color_point1">홍길동</span>님이 보낸 메세지<span class="message_date">2017-05-19</span>
+        </h3>
+    
+    
+        <div class="message_box">
+            안녕하세요.
+        </div>
+    </div>
+    
+    <div class="btn_check_box pb20">
+        <a href="#" class="btnpopup_point btn_check">확인</a>
+    </div>
+</div>
+</div>
+
+
+<!-- 메세지삭제경고_레이어팝업 -->
+<div class="popup_bgwrap p3">
+<div class="popup_no_update pd_b_0">
+    <h2>
+        메세지삭제경고
+        <a href="#"><img src="images/btn_close.gif" class="btn_close" alt="닫기"></a>
+    </h2>
+    
+    <div class="popup_coment txt_middle">
+    
+        <p class="coment_retouch pt10 pb10">
+            정말 삭제하시겠습니까?</p>
+    </div>        
+    <div class="btn_check_box pb20">
+        <a href="#" class="btnpopup_point btn_check">예</a>
+        <a href="#" class="btnpopup_base btn_check btn_no">아니오</a>
+    </div>
+</div>
+</div>
+
+</body>
+</html>

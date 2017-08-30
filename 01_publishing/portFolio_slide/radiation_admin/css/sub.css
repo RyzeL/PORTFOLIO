@@ -1,0 +1,317 @@
+@charset "utf-8";
+@import url(common.css);
+
+
+/* /////관리자_업무분장관리///// */
+
+.worktab_list_box {
+width: 940px;
+height: 642px;
+overflow-x: auto;
+overflow-y: auto;
+}
+
+.subCon_inner .taskguide {
+margin-bottom: 11px;
+padding: 14px 0;
+border:1px solid #d9dcdc;
+background: #fbfbfb;
+}
+
+.taskguide .taskguide_p {
+text-align: center;
+}
+
+.taskguide_p > span {
+color:#333;
+font-size: 15px;
+font-weight: 700;
+padding-right: 14px;
+}
+
+.workshape_btnbox {
+padding-bottom: 11px;
+}
+
+.finish_btnbox {
+clear: both;
+padding-top: 23px;
+text-align: right;
+}
+
+.btn_point_size {
+display: inline-block;
+width: 97px;
+background: #4f6a7d;
+line-height: 39px;
+margin-right: 5px;
+color:#fff;
+font-weight: 700;
+text-align: center;
+font-size: 15px;
+}
+
+.btn_point_size2 {
+display: inline-block;
+width: 97px;
+background: #42a4b2;
+line-height: 39px;
+margin-right: 5px;
+color:#fff;
+font-weight: 700;
+text-align: center;
+font-size: 15px;
+}
+
+.icon_arrow_r {
+display: inline-block;
+width: 9px;
+height: 13px;
+background: url(../images/icon_arrow_r.gif);
+background-repeat: no-repeat;
+vertical-align:middle;
+line-height: 39px;
+padding-bottom: 2px;
+}
+
+.icon_arrow_l {
+display: inline-block;
+width: 9px;
+height: 13px;
+background: url(../images/icon_arrow_l.gif);
+background-repeat: no-repeat;
+vertical-align:middle;
+line-height: 39px;
+padding-bottom: 2px;
+}
+
+.btn_base_size {
+display: inline-block;
+width: 97px;
+background: #aab0b5;
+line-height: 39px;
+margin-right: 5px;
+color:#fff;
+font-weight: 700;
+text-align: center;
+font-size: 15px;
+}
+
+.detailwork_side {
+width: 233px;
+height: 543px;
+float: left;
+margin-right: 16px;
+background:#fff;
+}
+
+.detailwork_side > h3 {
+background: #00536c;
+padding: 18px 0;
+color: #fff;
+font-size: 14px;
+font-weight: 700;
+text-align: center;
+}
+
+.detailwork_side ul.depth2 {
+border-right:1px solid #b6c5ca;
+border-left:1px solid #b6c5ca;
+border-bottom: 1px solid #b6c5ca;
+}
+
+.detailwork_side ul.depth2 .d2_title {
+padding: 11px 15px 10px 15px;
+border-bottom: 1px dashed #c7d2d7;
+font-size: 13px;
+font-weight: 700;
+cursor: pointer;
+color: #333;
+}
+
+.d2_title_on {
+color: #fff !important;
+background:#bc3535;
+}
+
+.ion-plus {
+padding-right:10px;
+/*color: #b4b4b4;*/
+font-weight: 900;
+vertical-align: middle;
+opacity: 0.6;
+}
+
+.icon_plus_bold_on {
+background: url(../images/icon_plus_bold_on.png);
+}
+
+.detailwork_side ul.depth3 > li {
+
+}
+
+.detailwork_side ul.depth3 > li > a {
+display: inline-block;
+padding: 18px 25px;
+color: #333;
+font-size: 13px;
+}
+
+.icon_3depth_arrow {
+display: inline-block;
+width: 7px;
+height: 16px;
+padding-right: 8px;
+background: url(../images/icon_3depth_arrow.gif);
+background-repeat:no-repeat;
+vertical-align: middle;
+}
+
+.icon_3depth {
+display: inline-block;
+width: 17px;
+height: 16px;
+padding-right: 8px;
+background: url(../images/icon_3depth.gif);
+background-repeat:no-repeat;
+vertical-align: middle;
+
+}
+
+.detailwork_next {
+width:690px;
+height: 543px;
+float: left;
+background: #fff;
+}
+
+.detailwork_next .detailwork_now_title {
+display: inline-block;
+width: 186px;
+padding: 0 9px;
+line-height: 33px;
+border: 1px solid #bfbfbf;
+background: #fff;
+font-size: 13px;
+font-weight: 700;
+}
+
+.detailwork_next .detailwork_list_box {
+height: 497px;
+overflow-x: hidden;
+overflow-y: auto;
+}
+
+/* /////관리자_알림관리_알림목록///// */
+
+.subCon_inner .btn_cancel_box {
+text-align: right;
+padding-bottom: 18px;
+}
+
+.popup_coment .coment_retouch {
+padding: 33px 0 35px 0;
+text-align: center;
+}
+
+
+/* /////관리자_작업관리_진행상태관리///// */
+
+table.list_tab_t {
+width:1000px !important;
+}
+
+table.list_tab_t th,
+table.list_tab_t td {
+position: relative;
+padding: 6px 12px !important;
+line-height: 18px;
+}
+
+.btn_ing {
+display: inline-block;
+width: 64px;
+border:1px solid #239498;
+background:#fff;
+color: #239498;
+line-height: 23px;
+text-align: center;
+}
+
+.btn_incom {
+display: inline-block;
+width: 64px;
+border:1px solid #bbb;
+background:#fff;
+color: #66686a;
+line-height: 23px;
+text-align: center;
+}
+
+.btn_change {
+position: absolute;
+right: 9px;
+bottom: 9px;
+}
+
+.btn_comple {
+display: inline-block;
+width: 64px;
+border:1px solid #e8533a;
+background:#fff;
+color: #e12c35;
+line-height: 23px;
+text-align: center;
+}
+
+/* 관리자_회원정보 변경 */
+
+.custom_frame {
+padding: 30px 109px;
+}
+
+h2.custom_title {
+font-size: 30px;
+font-weight: 700;
+background: url(../images/bg_custom_title.gif);
+background-repeat: no-repeat;
+background-position: 9px 4px;
+padding: 5px 0 12px 60px;
+line-height: 30px;
+border-bottom: 2px solid #000;
+}
+
+table.customedit_t {
+width: 100%;
+}
+
+table.customedit_t th {
+border-top:1px solid #c9c9c9;
+background: #f0f0f0;
+text-align: left;
+}
+
+table.customedit_t th,
+table.customedit_t td {
+padding:15px 20px;
+border-top:1px solid #c9c9c9;
+border-left:1px solid #c9c9c9;
+border-bottom:1px solid #c9c9c9;
+color: #333;
+font-size: 14px;
+}
+
+table.customedit_t input[type="text"] {
+padding: 0 12px;
+border: 1px solid #cdcdcd;
+line-height: 34px;
+}
+
+.replay_ment {
+padding-top: 12px;
+color: #e62929;
+font-weight: 700;
+font-size: 12px;
+}
+
+

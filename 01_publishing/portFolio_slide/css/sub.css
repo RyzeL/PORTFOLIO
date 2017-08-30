@@ -1,0 +1,466 @@
+/* ---------------------- sub_common ---------------------- */
+.subInner {
+    padding-top: 90px;
+}
+
+h2.subTitle > span {
+    display: inline-block;
+    padding: 0 40px;
+    background: #fff;
+    color: #7f7f7f;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 0px 2px 2px #ddd;
+}
+
+.con_list_box h3 {
+    padding: 0px 0 15px 17px;
+    background: url(../images/dot_title.png);
+    background-repeat: no-repeat;
+    background-position: 0 3px;
+}
+
+.con_list_box h3 > span {
+    color: #7f7f7f;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 0px 2px 2px #ddd;
+}
+
+.mainCon_list_inner > h4 {
+    padding-top: 23px;
+}
+
+.mainCon_list_inner > h4 > a {
+    font-size: 12px;
+    line-height: 22px;
+}
+
+/* ---------------------- sub_contents ---------------------- */
+
+/* work_layerPopup */
+.floater {
+    float: left;
+    width: 100%;
+    height: 50%;
+    margin-bottom: -312px;
+}
+
+.layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.layer .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+    filter: alpha(opacity=50);
+}
+
+.pop-layer {
+    display: block;
+    clear: both;
+    position: relative;
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    z-index: 150;
+}
+
+.pop-layer .pop-container {
+    padding: 15px;
+}
+
+.pop-layer p.ctxt {
+    color: #666;
+    line-height: 25px;
+}
+
+.pop-layer .btn-r {
+    text-align: right;
+}
+
+.btn-r a.cbtn img {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-r a.cbtn:hover {
+
+}
+
+.btnBox {
+    margin-top: 50px;
+    text-align: center;
+}
+
+h1.popupTitle {
+    padding-bottom: 20px;
+    background: url(../images/line_title.png);
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+}
+
+h1.popupTitle span {
+    display: inline-block;
+    padding: 0 40px;
+    background: #fff;
+    color: #7f7f7f;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 0px 2px 2px #ddd;
+}
+
+.workBox {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.workBox .inner {
+    position: relative;
+}
+
+.popupSlide {
+    position: relative;
+    overflow: hidden;
+}
+
+p.dummy {
+    opacity: 0;
+}
+
+ul.slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+ul.slide li {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+ul.slide li:first-child {
+    display: block;
+}
+
+ul.slide li img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+ul.indicator {
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 50px;
+    padding-top: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+ul.indicator li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 3px;
+}
+
+ul.indicator li a {
+    display: block;
+    width: 10px;
+    height: 10px;
+    text-indent: -999px;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #d7d7d7;
+    border-radius: 50%;
+}
+
+ul.indicator li.on a {
+    border: 1px solid #2574a9 ;
+    background: #2574a9 ;
+}
+
+p.control {
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 500;
+}
+
+p.control a {
+    display: block;
+    text-align: center;
+}
+
+p.control a.prev {
+    float: left;
+}
+
+p.control a.next {
+    float: right;
+}
+
+p.control a img {
+    width: 50%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.work_txtBox {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.work_txtBox_list {
+    background: #eee;
+    text-align: left;
+}
+
+.work_txtBox_list li {
+    padding-top: 7px;
+}
+
+.work_txtBox_list li h2 {
+    float: left;
+    padding-left: 20px;
+    font-size: 12px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.work_txtBox_list li span {
+    display: block;
+    padding-left: 160px;
+    font-size: 13px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.work_txtBox_list li span .homePage:hover {
+    color: #2574a9;
+    text-decoration: underline;
+}
+
+/* about */
+.list_box_inner {
+    overflow: hidden;
+    clear: both;
+}
+
+.list_box_inner > .img_box1_about {
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.list_box_inner > .img_box2_about {
+    float: right;
+    position: relative;
+    overflow: hidden;
+}
+
+.list_box_inner > .img_box::before {
+    position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+
+.list_box_inner > .img_box:hover::before {
+    -webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+.list_box_inner .txt_box1 {
+    float: right;
+}
+
+.list_box_inner .txt_box2 {
+    float: left;
+}
+
+.txt_hello1 {
+    padding-top: 25px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.txt_hello2 {
+    padding-top: 20px;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+.txt_box2 dl.txt_list {
+    padding-top: 25px;
+}
+
+.txt_box2 dl.txt_list dt {
+    float: left;
+    width: 60px;
+    padding-left: 20px;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.txt_box2 dl.txt_list dd {
+    padding-left: 150px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+#graph ul {
+  width: 1213px;
+  height: 500px;
+  margin: 0 auto;
+  list-style: none;
+  color: #333;
+  font-size: 14px;
+  padding: 0;
+/*  background: url(http://static.inky.ws/image/4580/strategy_and_planning_graph_axis.png) no-repeat 0px 60px;*/
+}
+
+#graph li {
+  float: left;
+  position: relative;
+  margin-left: -147px;
+}
+
+#graph li.circle1 {
+    width: 435px;
+    height: 455px;
+    margin-left: 0;
+    background: url(../images/bg1_Tskills_about.png);
+    background-repeat: no-repeat;
+}
+
+#graph li.circle2 {
+    width: 567px;
+    height: 588px;
+    background: url(../images/bg2_Tskills_about.png);
+    background-repeat: no-repeat;
+}
+
+#graph li.circle3 {
+    width: 441px;
+    height: 461px;
+    background: url(../images/bg3_Tskills_about.png);
+    background-repeat: no-repeat;
+}
+
+#graph li .txtBox {
+    padding-top: 10%;
+    text-align: center;
+}
+
+.txtBox h4 {
+    padding-top: 25px;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.txtBox h5 {
+    padding-top: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.txtBox_list p {
+    padding-top: 30px;
+    font-size: 13px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* contact */
+
+#contactBox {
+    padding-top: 20px;
+    text-align: center;
+}
+
+#letteringLogo path {
+    fill:none;
+    stroke:#2574a9;
+    stroke-width:0.5;
+    stroke-miterlimit:10;
+}
+
+.mynum_box {
+    padding-top: 20px;
+}
+
+.mynum_box ul {
+    overflow: hidden;
+}
+
+.mynum_box ul li {
+    padding-top: 15px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 30px;
+    letter-spacing: 1px;
+}

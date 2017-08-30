@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>한국원자력연구소_환경방사능실험공정관리시스템</title>
+
+<link href="css/sub.css" rel="stylesheet" type="text/css">
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/prefixfree.min.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script type="text/javascript" src="js/html5shiv.min.js"></script>
+<![endif]-->
+<!--  1. prefixfree.min.js - 벤더프리픽스(브라우저 마다 보이게 하는 코드 설정)를 따로 설정하지 않아도 된다.  -->
+<!--  2. modernizr.custom.js - HTML5와 CSS3가 지원되지 않는 브라우저에서 작동하게 하거나 동작 않는
+CSS속성을 대체 할 수 있는 다른 형식으로 표현해 주는 기능 : IE8에서도 작동되게 해준다.  -->
+<!-- 3. HTML5의 시멘틱태그를 ie8에서 작동할 수 있게 해준다.  -->
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- 레이어팝업 스크립트 -->
+<script type="text/javascript">
+
+$(function(){
+    
+     $('.popup_bgwrap').hide();
+     
+    $('.btn_edit_info').on('click' , function(){
+        $('.popup_bgwrap').show();
+    });
+            
+    $('.btn_close').on('click' , function(){
+        $('.popup_bgwrap').hide();
+    });
+    
+    $('.btn_no').on('click' , function(){
+        $('.popup_bgwrap').hide();
+    });
+
+});
+
+</script>
+
+</head>
+
+
+<body>
+
+<div id="wrap">
+
+    <div class="skip_navigation"><a href="#normal_subCon">본문 바로가기</a></div>
+    
+    <div id="header">
+        <div class="inner">
+            <h1><a href="index.html"><img src="images/logo.png" alt="한국원자력연구소_환경방사능실험공정관리시스템"></a></h1>
+            <h2 class="blind">메인메뉴시작</h2>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="sub1-1.html"><img src="images/gnb1.jpg" onmouseenter="src='images/gnb1_on.jpg'" onmouseout="src='images/gnb1.jpg'" alt="회원관리"></a></li>
+                    <li><a href="sub2-1.html"><img src="images/gnb2.jpg" onmouseenter="src='images/gnb2_on.jpg'" onmouseout="src='images/gnb2.jpg'" alt="작업관리"></a></li>
+                    <li><a href="sub3-1.html"><img src="images/gnb3.jpg" onmouseenter="src='images/gnb3_on.jpg'" onmouseout="src='images/gnb3.jpg'" alt="알림"></a></li>
+                    <li><a href="sub4-1.html"><img src="images/gnb4.jpg" onmouseenter="src='images/gnb4_on.jpg'" onmouseout="src='images/gnb4.jpg'" alt="업무분장"></a></li>
+                    <li><a href="sub5-1.html"><img src="images/gnb5.jpg" onmouseenter="src='images/gnb5_on.jpg'" onmouseout="src='images/gnb5.jpg'" alt="나가기"></a></li>
+                    <li class="gnb_list"><a href="sub6-1.html"><img src="images/gnb6_on.jpg" alt="정보변경"></a></li>
+                </ul>
+            </nav>
+            
+        </div>
+    </div>
+    
+    <!-- normal_sub -->
+    
+    <div id="normal_subVis">
+        <div class="subVis_inner subVis_message">
+            <p class="page_guideline"><span class="gohome"></span><span class="arrow_right"></span>정보변경</p>
+            <h2>회원정보 변경</h2>
+        </div>
+    </div>
+    
+    <div id="normal_subCon">
+        <div class="subCon_inner">
+           <div class="custom_frame">
+                <h2 class="custom_title">회원정보 변경</h2>
+
+                <table class="customedit_t mt30">
+                    <caption class="blind">회원정보변경테이블</caption>
+                    <colgroup>
+                        <col width="35%">
+                        <col width="65%">
+                    </colgroup>
+
+                    <tr>
+                        <th scope="row" class="bor_l_0">이름</th>
+                        <td>김갑수</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row" class="bor_l_0"><span class="color_point2">*</span>&ensp;아이디</th>
+                        <td>
+                            <input type="text" id="Idd" class="w95" name="D" placeholder="홍길동"><label for="Idd" class="blind">아이디입력</label>
+                            <p class="replay_ment">동일한 아이디가 있거나 입력이 잘못되었습니다. 다시 입력해주세요.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row" class="bor_l_0"><span class="color_point2">*</span>&ensp;현재 비밀번호</th>
+                        <td>
+                            <input type="text" id="Npw" class="w95" name="N" placeholder="*****"><label for="Npw" class="blind">현재 비밀번호</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row" class="bor_l_0"><span class="color_point2">*</span>&ensp;새 비밀번호</th>
+                        <td>
+                            <input type="text" id="Nnpw" class="w95" name="Nn" placeholder="*****"><label for="Nnpw" class="blind">현재 비밀번호 입력하기</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row" class="bor_l_0"><span class="color_point2">*</span>&ensp;새 비밀번호 확인</th>
+                        <td>
+                            <input type="text" id="Nnpwc" class="w95" name="Nnc" placeholder="*****"><label for="Nnpwc" class="blind">새 비밀번호 입력하기</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row" class="bor_l_0"><span class="color_point2">*</span>&ensp;이메일 주소</th>
+                        <td>
+                            <input type="text" id="Ema" class="w95" name="E" placeholder="naver@naver.com"><label for="Ema" class="blind">이메일 입력하기</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row" class="bor_l_0">회원구분</th>
+                        <td>일반회원</td>
+                    </tr>
+                </table>
+           </div>
+           <div class="btn_check_box">
+               <a href="#" class="btn_point3-2 btn_edit_info"><span class="icon_check"></span>정보변경</a>
+           </div>
+           
+           
+        </div>
+    </div>
+    
+    <!-- //normal_contents -->
+    
+</div>
+
+<div id="footer">
+            <div class="inner">
+                <img src="images/f_logo.png" class="f_logo" alt="한국원자력연구원로고">
+                <h2 class="blind">저작권자 정보</h2>
+                <div class="f_info_box">
+                    <p class="team_name">Environmental Radioactivity Assessment Team</p>
+                    <p class="f_info">34057 대전광역시 유성구 대덕대로 989번길 111    Tel: +82-(0)42-868-8961   Fax: +82-(0)42-862-3708</p>
+                    <p class="f_info">copyrightⓒ ALL RIGHTS RESERVED</p>
+                </div>
+            </div>
+        </div>
+
+<!-- 레이어팝업_정보변경 -->
+<div class="popup_bgwrap">
+    <div class="popup_no_update">
+    <h2>
+        정보 변경
+        <a href="#"><img src="images/btn_close.gif" class="btn_close" alt="닫기"></a>
+    </h2>
+    
+    <div class="popup_coment">
+        <p class="coment_retouch">
+            회원정보를 변경하시겠습니까?
+        </p>
+    </div>
+    
+    <div class="btn_check_box pt20">
+        <a href="#" class="btnpopup_point btn_check">확인</a>&ensp;
+        <a href="#" class="btnpopup_base btn_check btn_no">취소</a>
+    </div>
+</div>
+</div>
+
+
+</body>
+</html>
