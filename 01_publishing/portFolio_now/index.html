@@ -29,14 +29,16 @@
 <!-- base jQuery -->
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
 <!-- header jQuery plugin -->
-<script type="text/javascript" src="js/headhesive.js"></script>
+<!--<script type="text/javascript" src="js/headhesive.js"></script>-->
 <!-- custom jQuery -->
 <script type="text/javascript" src="js/default.js"></script>
+<!-- jQuery : workLayerPopup -->
+<script type="text/javascript" src="js/layerPopup.js"></script>
 
 </head>
 
 
-<body id="top"> 
+<body> 
     <div id="wrap">
 
     <div class="skip_navigation"><a href="#Con">Contents shortcut</a></div>
@@ -56,7 +58,7 @@
         </div>
     </div>
     
-    <a id="showHere"></a>
+    <!--<a id="showHere"></a>-->
 
     <!-- //header -->
     
@@ -98,20 +100,55 @@ who are developing hobbies._This is half-image that JINSEUL is working."></a>
        <div class="inner">
            <h2><span>My Latest Project</span></h2>
            <ul class="mainCon_list">
-               <li>
+                   <li>
                    <div class="mainCon_list_inner">
                         <div class="img_box">
-                           <a href="#">
-                            <img src="images/img1_mainCon.jpg" alt="GAONN IT" title="more">
+                           <a href="#" class="btn-example1">
+                            <img src="images/img1_mainCon.jpg" alt="가온엔아이티" title="more">
                             </a>
                         </div>
                         <p class="straight">
-                            <a href="./radiation_admin/index.html" title="사이트바로가기">
+                            <a href="http://gaonnit.com/" target="_blank" title="사이트 바로가기">
                                 <span class="ion-paper-airplane icon1"></span>&ensp;GO SITE
                                     </a>
                         </p>
-                        <h3><a href="#" title="more">PROJECT NAME_&ensp;<span class="nameTitle">GAONN IT Homepage Renewal</span></a></h3>
-                        <p class="second_txt"><a href="#" title="more">TASK_&ensp;<span class="nameTitle">Publishing</span>&ensp;&#40;PARTICIPATION_&ensp;<span class="nameTitle">100%</span>&#41;</a></p>
+                        <h4><a href="#" class="btn-example1" title="more">PROJECT NAME_&ensp;<span class="nameTitle ellipsis ">가온엔아이티_홈페이지 리뉴얼&#40;반응형&#41;</span></a></h4>
+                        <p class="second_txt"><a href="#" class="btn-example1" title="more">TASK_&ensp;<span class="nameTitle">Publishing</span>&ensp;&#40;참여도_&ensp;<span class="nameTitle">100%</span>&#41;</a></p>
+                        <p class="second_txt"><a href="#" class="btn-example1" title="more">PROJECT PERIOD_&ensp;<span class="nameTitle">2017.07 ~ 진행중</span></a></p>
+                    </div>
+               </li>
+                   <li>
+                   <div class="mainCon_list_inner">
+                        <div class="img_box">
+                           <a href="#" class="btn-example2">
+                            <img src="images/img2_mainCon.jpg" alt="한국원자력방사능일반" title="more">
+                            </a>
+                        </div>
+                        <p class="straight">
+                            <a href="http://flower21.woobi.co.kr/radiation1/" target="_blank" title="사이트 바로가기">
+                                <span class="ion-paper-airplane icon1"></span>&ensp;GO SITE
+                                    </a>
+                        </p>
+                        <h4><a href="#" class="btn-example2" title="more">PROJECT NAME_&ensp;<span class="nameTitle ellipsis">한국원자력연구소 환경방사능실험공정관리시스템 사이트 구축&#40;일반&#41;</span></a></h4>
+                        <p class="second_txt"><a href="#" class="btn-example2" title="more">TASK_&ensp;<span class="nameTitle">Publishing</span>&ensp;&#40;참여도_&ensp;<span class="nameTitle">100%</span>&#41;</a></p>
+                        <p class="second_txt"><a href="#" class="btn-example2" title="more">PROJECT PERIOD_&ensp;<span class="nameTitle">2017.05 ~ 2017.07</span></a></p>
+                    </div>
+               </li>
+                   <li>
+                   <div class="mainCon_list_inner">
+                        <div class="img_box">
+                           <a href="#" class="btn-example3">
+                            <img src="images/img3_mainCon.jpg" alt="한국원자력방사능관리자" title="more">
+                            </a>
+                        </div>
+                        <p class="straight">
+                            <a href="http://flower21.woobi.co.kr/radiation2/" target="_blank" title="사이트 바로가기">
+                                <span class="ion-paper-airplane icon1"></span>&ensp;GO SITE
+                                    </a>
+                        </p>
+                        <h4><a href="#" class="btn-example3" title="more">PROJECT NAME_&ensp;<span class="nameTitle ellipsis">한국원자력연구소 환경방사능실험공정관리시스템 사이트 구축&#40;관리자&#41;</span></a></h4>
+                        <p class="second_txt"><a href="#" class="btn-example3" title="more">TASK_&ensp;<span class="nameTitle">Publishing</span>&ensp;&#40;참여도_&ensp;<span class="nameTitle">100%</span>&#41;</a></p>
+                        <p class="second_txt"><a href="#" class="btn-example3" title="more">PROJECT PERIOD_&ensp;<span class="nameTitle">2017.05 ~ 2017.07</span></a></p>
                     </div>
                </li>
            </ul>
@@ -127,6 +164,179 @@ who are developing hobbies._This is half-image that JINSEUL is working."></a>
     <!-- topBtn -->
         <a href="#top" class="top">top</a>
     <!-- //topBtn --> 
+    
+    <!-- morePage_layerPopup -->
+    <!-- 1_newGaonnit -->
+    <div class="layer layer1">
+    <div class="bg"></div>
+    <div class="floater"></div>
+    <div class="pop-layer">
+        <div class="pop-container">
+            <div class="pop-conts">
+                <!--content //-->
+                <div class="btn-r">
+                    <a href="#" class="cbtn"><img src="images/close_btn.png" alt="close" title="close"></a>
+                </div>
+                <h1 class="popupTitle"><span>가온엔아이티_홈페이지 리뉴얼&#40;반응형&#41;</span></h1>
+                <div class="workBox">
+                        <div class="inner">
+            <div class="popupSlide">
+                <p class="dummy">
+                    <img src="images/img1_Newgaon.jpg" alt="GONN IT web site work image1">
+
+                </p>
+                <ul class="slide">
+                    <li>
+                            <img src="images/img1_Newgaon.jpg" alt="GONN IT web site work image1">
+                    </li>
+                </ul>
+                </div>
+
+        </div>
+                </div>
+                <div class="work_txtBox">
+                    <ul class="work_txtBox_list">
+                        <li>
+                            <h2>project name_</h2>
+                            <span>가온엔아이티_홈페이지 리뉴얼&#40;반응형&#41;</span>
+                        </li>
+                        <li>
+                            <h2>site url_</h2>
+                            <span><a class="homePage" href="http://gaonnit.com/" target="_blank" title="Go homepage">http://gaonnit.com/</a></span>
+                        </li>
+                        <li>
+                            <h2>client_</h2>
+                            <span>가온엔아이티</span>
+                        </li>
+                        <li class="pb07">
+                            <h2>main features_</h2>
+                            <span>- UX/UI 강화&emsp;- 컨텐츠 보충</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--// content-->
+            </div>
+        </div>
+    </div>
+</div>
+   
+   <!-- 2_radiation1 -->
+   <div class="layer layer2">
+    <div class="bg"></div>
+    <div class="floater"></div>
+    <div class="pop-layer">
+        <div class="pop-container">
+            <div class="pop-conts">
+                <!--content //-->
+                <div class="btn-r">
+                    <a href="#" class="cbtn"><img src="images/close_btn.png" alt="close" title="close"></a>
+                </div>
+                <h1 class="popupTitle"><span>한국원자력연구소 환경방사능실험공정관리시스템 사이트 구축&#40;일반&#41;</span></h1>
+                <div class="workBox">
+                        <div class="inner">
+            <div class="popupSlide">
+                <p class="dummy">
+                    <img src="images/img1_Radiation_user.jpg" alt="radiation web site work image1">
+
+                </p>
+                <ul class="slide">
+                    <li>
+                            <img src="images/img1_Radiation_user.jpg" alt="radiation web site work image1">
+                    </li>
+                </ul>
+                </div>
+
+        </div>
+                </div>
+                <div class="work_txtBox">
+                    <ul class="work_txtBox_list">
+                        <li>
+                            <h2>project name_</h2>
+                            <span>한국원자력연구소 환경방사능실험공정관리시스템 사이트 구축&#40;일반&#41;</span>
+                        </li>
+                        <li>
+                            <h2>site url_</h2>
+                            <span><a class="homePage" href="http://flower21.woobi.co.kr/radiation1/" target="_blank" title="Go homepage">http://flower21.woobi.co.kr/radiation1/</a></span>
+                        </li>
+                        <li>
+                            <h2>client_</h2>
+                            <span>나린비</span>
+                        </li>
+                        <li>
+                            <h2>main features_</h2>
+                            <span>- UX/UI 강화&emsp;- 심플한 디자인</span>
+                        </li>
+                        <li class="pb07">
+                            <h2>etc_</h2>
+                            <span>내부망 구축이기에 임의의 서버로 연결했습니다.</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--// content-->
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <!-- 3_radiation2 -->
+   <div class="layer layer3">
+    <div class="bg"></div>
+    <div class="floater"></div>
+    <div class="pop-layer">
+        <div class="pop-container">
+            <div class="pop-conts">
+                <!--content //-->
+                <div class="btn-r">
+                    <a href="#" class="cbtn"><img src="images/close_btn.png" alt="close" title="close"></a>
+                </div>
+                <h1 class="popupTitle"><span>한국원자력연구소 환경방사능실험공정관리시스템 사이트 구축&#40;관리자&#41;</span></h1>
+                <div class="workBox">
+                        <div class="inner">
+            <div class="popupSlide">
+                <p class="dummy">
+                    <img src="images/img1_Radiation.jpg" alt="radiation web site work image2">
+
+                </p>
+                <ul class="slide">
+                    <li>
+                            <img src="images/img1_Radiation.jpg" alt="radiation web site work image2">
+                    </li>
+                </ul>
+                </div>
+
+        </div>
+                </div>
+                <div class="work_txtBox">
+                    <ul class="work_txtBox_list">
+                        <li>
+                            <h2>project name_</h2>
+                            <span>한국원자력연구소 환경방사능실험공정관리시스템 사이트 구축&#40;관리자&#41;</span>
+                        </li>
+                        <li>
+                            <h2>site url_</h2>
+                            <span><a class="homePage" href="http://flower21.woobi.co.kr/radiation1/" target="_blank" title="Go homepage">http://flower21.woobi.co.kr/radiation2/</a></span>
+                        </li>
+                        <li>
+                            <h2>client_</h2>
+                            <span>나린비</span>
+                        </li>
+                        <li>
+                            <h2>main features_</h2>
+                            <span>- UX/UI 강화&emsp;- 심플한 디자인</span>
+                        </li>
+                        <li class="pb07">
+                            <h2>etc_</h2>
+                            <span>내부망 구축이기에 임의의 서버로 연결했습니다.</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--// content-->
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- //morePage_layerPopup -->
+    
 </div>
 <!-- //wrap -->
 

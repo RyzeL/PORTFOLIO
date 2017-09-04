@@ -85,8 +85,8 @@ $(function(){
         $('.layer6').hide();
         e.preventDefault();
     });
-    
-     /* 7_J-TMS */
+
+    /* 7_oldgaon */
     $('.btn-example7').on('click' , function(){
         $('.layer7').show();
     });
@@ -100,17 +100,59 @@ $(function(){
         e.preventDefault();
     });
     
-    /* 8_oldgaon */
-    $('.btn-example8').on('click' , function(){
-        $('.layer8').show();
+    /* 1-1_eccplus */
+    $('.btn-example1-1').on('click' , function(){
+        $('.layer1-1').show();
     });
     
     $('.cbtn').on('click' , function(){
-        $('.layer8').hide();
+        $('.layer1-1').hide();
     });
     
-    $('.layer8 .bg').on('click' , function(){	
-        $('.layer8').hide();
+    $('.layer1-1 .bg').on('click' , function(){	
+        $('.layer1-1').hide();
+        e.preventDefault();
+    });
+    
+    /* 2-1_nike */
+    $('.btn-example2-1').on('click' , function(){
+        $('.layer2-1').show();
+    });
+    
+    $('.cbtn').on('click' , function(){
+        $('.layer2-1').hide();
+    });
+    
+    $('.layer2-1 .bg').on('click' , function(){	
+        $('.layer2-1').hide();
+        e.preventDefault();
+    });
+    
+    /* 3-1_lg */
+    $('.btn-example3-1').on('click' , function(){
+        $('.layer3-1').show();
+    });
+    
+    $('.cbtn').on('click' , function(){
+        $('.layer3-1').hide();
+    });
+    
+    $('.layer3-1 .bg').on('click' , function(){	
+        $('.layer3-1').hide();
+        e.preventDefault();
+    });
+    
+    /* 4-1_hollys */
+    $('.btn-example4-1').on('click' , function(){
+        $('.layer4-1').show();
+    });
+    
+    $('.cbtn').on('click' , function(){
+        $('.layer4-1').hide();
+    });
+    
+    $('.layer4-1 .bg').on('click' , function(){	
+        $('.layer4-1').hide();
         e.preventDefault();
     });
 

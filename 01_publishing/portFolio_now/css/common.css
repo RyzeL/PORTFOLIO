@@ -86,11 +86,13 @@ body {
     line-height: 100%;
     -webkit-text-size-adjust: none;/* 모바일 경우 */
     overflow-x: hidden;
+    scrollbar-face-color: #2574a9;
 }
 
 a {
     text-decoration: none;
     color: #000;
+    transition: 0.5s;
 }
 
 .skip_navigation a {
@@ -653,6 +655,24 @@ select {
     color:#2574a9 !important;
 }
 
+/* scrollbar_setting */
+::-webkit-scrollbar {
+      width: 10px;
+} /* this targets the default scrollbar (compulsory) */
+
+::-webkit-scrollbar-track {
+      background-color: #fff;
+} /* the new scrollbar will have a flat appearance with the set background color */
+ 
+::-webkit-scrollbar-thumb {
+      background-color: rgba(37, 116, 169, 0.2); 
+} /* this will style the thumb, ignoring the track */
+ 
+::-webkit-scrollbar-button {
+      background-color: #fff;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+ 
+
 
 /* etc */
 .curPoint {
@@ -717,6 +737,7 @@ nav .gnb > li > a {
 nav .gnb > li > a:hover {
     color: #fff;
 }
+
 /**/
 
 
@@ -749,17 +770,17 @@ nav .gnb > li > a:hover {
     bottom: 5%;
     width: 50px;
     line-height: 50px;
-    color: #333 !important;
+    color: #2574a9 !important;
     font-size: 13px;
     font-weight: 700;
-    border: 1px solid #333;
+    border: 1px solid #2574a9;
     border-radius: 50%;
     text-align: center;
 }
 
 .top:hover,
 .top:focus {
-    background: #333;
+    background: #2574a9;
     color: #fff !important;
 }
 /**/

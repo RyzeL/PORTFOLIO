@@ -391,10 +391,11 @@ animation-duration:1.5s;
 .mainCon_list_inner .img_box a img {
     -webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
-	
+	transition: 1s;
 }
 
-.mainCon_list_inner .img_box a:hover img {
+.mainCon_list_inner .img_box a:hover img,
+.mainCon_list_inner .img_box a:focus img {
     -webkit-filter: grayscale(0);
 	filter: grayscale(0);
 }
