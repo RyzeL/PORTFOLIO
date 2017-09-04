@@ -102,11 +102,11 @@ https://codepen.io/mikehobizal/pen/EgKgGm
 letter 애니메이션 효과 배우기
 http://blog.wani.kr/posts/2013/12/04/svg-path-animation/
 
-
 햄버거 클릭 시 효과
 https://codepen.io/briandamage/pen/qrVXLV
 
-
+CSS3 Checkbox Styles (영어로 전환 할때 버튼 사용하기)
+https://codepen.io/bbodine1/pen/novBm
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 레이어팝업 ajax
