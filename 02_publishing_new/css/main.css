@@ -381,6 +381,7 @@ animation-duration:1.5s;
 
 .mainCon_list_inner .img_box {
     overflow: hidden;
+    height: 268px;
     text-align: center;
 }
 

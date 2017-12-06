@@ -1,13 +1,5 @@
-
 /* ---------------------- font ---------------------- */
-
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
-
-@font-face {
-    font-family:'Raleway-Regular';
-    src:url('Raleway-Regular.eot?#iefix') fomat('embedded-opentype'), /* ie8 호환 */
-                url('../font/Raleway-Regular.woff') format('woff');  /* ie9이상 및 웹표준 브라우저(크롬,파이폭스,사파리 등)에 적용 */
-}
 
 /* ---------------------- reset ---------------------- */
 
@@ -81,7 +73,7 @@ table {
 /* ---------------------- base ---------------------- */
 
 body {
-    font: 11px 'Raleway','Nanum Gothic';
+    font: 11px 'NanumgGothic';
     color: #000;
     line-height: 100%;
     -webkit-text-size-adjust: none;/* 모바일 경우 */

@@ -45,47 +45,32 @@ h2.subTitle > span {
 /* ---------------------- sub_contents ---------------------- */
 
 /* work_layerPopup */
-.floater {
-    float: left;
-    width: 100%;
-    height: 50%;
-    margin-bottom: -312px;
-}
-
-.layer {
+.bg {
     display: none;
     position: fixed;
-    top: 0;
     left: 0;
+    top: 0;
+    bottom: 0;
+    overflow-y: hidden;
+    z-index: 10;
     width: 100%;
     height: 100%;
-    z-index: 100;
-}
-
-.layer .bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    opacity: .5;
-    filter: alpha(opacity=50);
+    background-image: url(../images/whole_bg.png)
 }
 
 .pop-layer {
-    display: block;
-    clear: both;
-    position: relative;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
     width: 85%;
     height: auto;
-    margin: 0 auto;
     background-color: #fff;
     border-right: 7px solid #2574a9;
     border-bottom: 7px solid #2574a9;
     border-left: 7px solid #2574a9;
     text-align: center;
-    z-index: 150;
+    z-index: 20;
 }
 
 .pop-layer .pop-container {
