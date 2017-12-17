@@ -1,0 +1,392 @@
+@charset "utf-8";
+/********************************************
+|-------------------common.css-------------------|          
+|Explanation : 브라우저 환경 리셋 및 공통 스타일에 대한 css 파일
+|Producer : JinSeul Choi 
+|FirstFoundationDate : 2017.01.09
+|RsentUpDate : 2017.10.25
+|Index : 
+1::: Font 2::: Reset 3::: Base 4::: CommonCustom 5::: LayOut 6::: MediaQuery
+|Rule : 
+1::: 각 파일에 대한 설명의 타이틀은 파스칼표기법을 따른다.
+2::: 아이디와 클래스명은 카멜표기법을 따른다.
+********************************************/
+/* ---------------------- 1::: Font ---------------------- */
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/* ---------------------- 2::: Reset ---------------------- */
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+body,
+div,
+p,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+button,
+input {
+    margin: 0;
+    padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+input,
+button {
+    font-weight: 100;
+}
+ul,
+li,
+ol {
+    list-style: none;
+}
+fieldset,
+iframe,
+img {
+    border: 0;
+}
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+table {
+    border-collapse: collapse;
+}
+/* ---------------------- 3::: Base ---------------------- */
+body {
+    font-size: 1rem;
+    font-family: 'Noto Sans KR' , 'Raleway';
+    font-weight: 500;
+    background-color: #fff;
+    color: #000;
+    line-height: 100%;
+    /* 모바일 경우 */
+    -webkit-text-size-adjust: none; 
+}
+a {
+    text-decoration: none;
+    color: #050101;
+}
+.skip_navigation a {
+    position: absolute;
+    left: 0px;
+    top: -9999px;
+}
+.skip_navigation a:focus {
+    display: block;
+    top: 0px;
+    width: 100%;
+    line-height: 0.5rem;
+    font-size: 0.5rem;
+    font-weight: 700;
+    background: #f0f0f0;
+    color: #000;
+    text-align: center;
+    z-index: 150;
+}
+.blind {
+    position: absolute;
+    left: 0px;
+    top: -9999px;
+}
+/* ---------------------- 4::: CommonCustom ---------------------- */
+/* ---------- BorderReset ---------- */
+.bor0 {
+    border: 0 !important;
+}
+.borT0 {
+    border-top: 0 !important;
+}
+.borR0 {
+    border-right: 0 !important;
+}
+.borB0 {
+    border-bottom: 0 !important;
+}
+.borL0 {
+    border-left: 0 !important;
+}
+/* ---------- TextEdit ---------- */
+/* -- TextAlign -- */
+.txtL {
+    text-align: left !important;
+}
+.txtC {
+    text-align: center !important;
+}
+.txtR {
+    text-align: right !important;
+}
+/* -- TextBold -- */
+.txt900 {
+    font-weight: 900 !important;
+}
+.txt700 {
+    font-weight: 700 !important;
+}
+.txt500 {
+    font-weight: 500 !important;
+}
+.txt300 {
+    font-weight: 300 !important;
+}
+.txt100 {
+    font-weight: 100 !important;
+}
+/* ---------- VerticalAlign ---------- */
+.verT {
+    vertical-align: top !important;
+}
+.verM {
+    vertical-align: middle !important;
+}
+.verB {
+    vertical-align: bottom !important;
+}
+/* ---------- FloatSetting ---------- */
+.floBase {
+    float: inherit !important;
+}
+.floL {
+    float: left !important;
+}
+.floR {
+    float: right !important;
+}
+.clearB {
+    clear: both !important;
+}
+/* ---------- EllipsisSetting ---------- */
+.ellipsis {
+    white-space: nowrap;
+    word-wrap:normal;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -moz-binding: url(ellipsis.xml#ellipsis);
+    overflow: hidden;
+}
+.ellipsisCustom1 {
+    display: inline-block;
+    width: 70%;
+    vertical-align: middle;
+}
+.ellipsisCustom2 {
+    display: inline-block;
+    width: 55%;
+    vertical-align: middle;
+}
+/* ---------- CustomPoint ---------- */
+.color0 {
+    color:red !important;
+}
+.bg0 {
+    background-color: #686868 !important;
+}
+.curPoint {
+    cursor: pointer;
+}
+.overHidden {
+    overflow: hidden;
+}
+.disNone {
+    display: none;
+}
+.disInline {
+    display: inline-block;
+}
+
+/* ---------------------- 5::: LayOut ---------------------- */
+/* ---------- CommonInner ---------- */
+.inner {
+    width: 80%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+/* ---------- Header ---------- */
+#header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    height: 5.5rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid #e3d0c7;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 7px #dfdfdf;
+    font-family: 'Raleway'; 
+}
+.hInner {
+    height: 5.5rem;
+    text-align: center;
+}
+h1#logo {
+    display: inline-block;
+    padding-top: 0.8rem;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.7rem;
+    letter-spacing: -0.07rem;
+    cursor: pointer;
+}
+.gnb {
+    padding-top: 1rem;
+}
+.menu {
+    padding-left: 2.3rem;
+    color: #b4aeae;
+    font-size: 0.85rem;
+    line-height: 1rem;
+}
+.menu:first-child {
+    padding-left: 0;
+}
+.menu:hover,
+.menu:focus {
+    color: #000;
+    font-weight: 900;
+}
+/**/
+
+/* ---------- Footer ---------- */
+#footer {
+    padding: 1rem 0;
+    border-top: 1px solid #e3d0c7;
+    box-sizing: border-box;
+    font-family: 'Raleway'; 
+}
+.copyright {
+    float: left;
+    width: 33.33%;
+    padding: 1rem 0;
+    color: #b4aeae;
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 0.9rem;
+}
+.thankyou {
+    float: left;
+    width: 33.33%;
+    padding: 1rem 0;
+    color:#e3d0c7;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+}
+.footerContact {
+    float: left;
+    width: 33.33%;
+    text-align: right;  
+}
+.sns:first-child,
+.call:first-child {
+    padding-left: 0;
+}
+.sns {
+    padding-left: 1.5rem;
+    color: #b4aeae;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+}
+.call {
+    color: #000;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+.footerContact a:hover,
+.footerContact a:focus {
+    color: #000;
+    font-weight: 900;
+}
+/**/
+/* ---------- Top ---------- */
+/*.top {
+display: none;
+z-index: 500;
+position: fixed;
+right: 2%;
+bottom: 5%;
+width: 50px;
+line-height: 50px;
+color: #fff !important;
+font-size: 13px;
+font-weight: 700;
+background:rgba(50,50,50,0.7);
+border-radius: 50%;
+text-align: center;
+}*/
+
+/* ---------------------- 6::: MediaQuery ---------------------- */
+@media all and (max-width:767px) { /* 스마트폰 */  
+    /* ---------- Common ---------- */
+    .inner {
+        width: 97%;
+    }
+    .menu {
+        padding-left: 1rem;
+    }
+    .copyright,
+    .thankyou,
+    .footerContact {
+        float: inherit;
+        width: 100%;
+        text-align: center;
+    }
+    .copyright {
+        padding: 0 0;
+    }
+    .thankyou {
+        display: none;
+    }
+    .footerSns {
+        padding: 0.9rem 0;
+    }
+    .call {
+        line-height: 0.9rem;
+        display: block;
+    }
+    /* ---------- Main ---------- */
+    .mainCon {
+        padding: 7.5rem 0 2rem 0 !important; 
+    }
+    .mainSlideBg {
+        height: inherit !important;
+        padding-top: 1rem  !important; 
+        background-image: none !important; 
+    }
+    .slideBox {
+        width: 97% !important;
+    }
+    /* ---------- Sub ---------- */
+}
+@media all and (min-width:768px) and (max-width:1024px) { /* 태블릿 */
+/* ---------- Common ---------- */
+/* ---------- Main ---------- */
+/* ---------- Sub ---------- */
+}
+@media all and (min-width:1600px) { /* PC */
+/* ---------- Common ---------- */
+/* ---------- Main ---------- */
+/* ---------- Sub ---------- */
+}

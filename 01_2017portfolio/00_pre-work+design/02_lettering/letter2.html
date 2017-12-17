@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>letter2</title>
+
+<style type="text/css">
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:#3F71A5;
+}
+
+#container {
+  height: 300px;
+}
+</style>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/anime.min.js"></script>
+<script type="text/javascript">
+
+$(function(){
+
+    const setDashoffset = function(el) {
+      var l = el.getTotalLength();
+      el.setAttribute('stroke-dasharray', l);
+      return [l,0];
+    }
+
+    const hAnimation = anime({
+      targets: ['#h'],
+      strokeDashoffset: {
+        value: setDashoffset,
+        duration: 1300,
+        easing: 'easeOutQuad'
+      },
+    });
+
+    const iAnimation = anime({
+      targets: ['#i'],
+      strokeDashoffset: {
+        value: setDashoffset,
+        duration: 1100,
+        delay: 400,
+        easing: 'easeOutQuad'
+      },
+    });
+
+    const dotAnimation = anime({
+      targets: ['#dot'],
+      strokeDashoffset: {
+        value: setDashoffset,
+        duration: 800,
+        delay: 1000,
+        easing: 'easeOutQuad'
+      },
+    });
+    
+});
+</script>
+
+</head>
+
+
+<body>
+
+<div id="wrap">
+    <svg 
+     id="container"
+     viewBox="0 0 250 240" 
+     version="1.1" 
+     xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+  <g stroke="#fff" fill="transparent" stroke-width="2">
+  <path d="M0,144.318237 C20.3085937,144.318237 75.390625,88.0447998 75.390625,36.8221436 C75.390625,-14.4005127 53.9296875,-7.15832738 53.9296875,36.2010498 C53.9296875,79.560427 63.3359375,165.814331 50.515625,202.400269 C37.6953125,238.986206 25.5859375,210.177612 35.4296875,177.247925 C45.2734375,144.318237 70.6015625,102.1698 109.703125,108.372925 C148.804688,114.57605 89.0117188,218.880737 164.21875,209.021362" id="h" />
+  
+  <path d="M163 208.9355636C185.13036019999998 208.9355636 202.1690483 153.455467 202.1690483 130.7899933C202.1690483 108.12451953 188.8601962 108.68389892 188.8601962 130.7899927C188.8601962 152.8960864 193.4128566 206.7442988 225.796875 206.74430139999998C258.1808934 206.744304 232.9897273 159.7572021 213.1015625 160.4511886" id="i" />
+
+  <path d="M181.2382812 87.1132812C198.80859370000002 105.1640625 209.92578120000002 77.7382812 195.5820312 65.8398437C181.2382812 53.94140625 170.53515539 63.46484408 186.4296875 75.2890625C202.3242196 87.1132809 218.9335945 66.171875 207.2578125 57.23828125C195.5820305 48.3046875 152.8437509 78.6640617 169.63671875 87.8554688C186.4296866 97.04687580000001 211.52734370000002 74.8007814 190.5820312 70.3203125" id="dot" />
+
+  </g>
+</svg>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>webTitle</title>
+<link href="css/sub.css" rel="stylesheet" type="text/css">
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/prefixfree.min.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script type="text/javascript" src="js/html5shiv.min.js"></script>
+<![endif]-->
+<!--  1. prefixfree.min.js - 벤더프리픽스(브라우저 마다 보이게 하는 코드 설정)를 따로 설정하지 않아도 된다.  -->
+<!--  2. modernizr.custom.js - HTML5와 CSS3가 지원되지 않는 브라우저에서 작동하게 하거나 동작 않는
+CSS속성을 대체 할 수 있는 다른 형식으로 표현해 주는 기능 : IE8에서도 작동되게 해준다.  -->
+<!-- 3. HTML5의 시멘틱태그를 ie8에서 작동할 수 있게 해준다.  -->
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="btnBox">    
+    <a href="#" class="btn-example" onclick="layerpop()">img1</a>
+    <a href="#" class="btn-example" onclick="layerpop()">img2</a>
+    <a href="#" class="btn-example" onclick="layerpop()">img3</a>
+
+</div>
+
+
+<div class="layer">
+	<div class="bg"></div>
+	<div class="floater"></div>
+	<div id="layer2" class="pop-layer">
+		<div class="pop-container">
+			<div id="change_div" class="pop-conts">
+				<!--content //-->
+				<div class="img_box">
+				    <img src="images/gnb1_on.jpg" alt="">
+				</div>
+                <p class="txt">
+                    업무분장
+                </p>
+				<div class="btn-r">
+					<a href="#" class="cbtn">Close</a>
+				</div>
+				<!--// content-->
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 중앙레이어팝업 -->
+<script type="text/javascript">
+$(function(){
+    $('.layer').hide();
+    
+    $('.btn-example').on('click' , function(){
+        $('.layer').show();
+        //$('div.pop-conts').innerHTML(data);
+    });
+    
+    $('.cbtn').on('click' , function(e){
+        $('.layer').hide();
+    });
+    
+    $('.layer .bg').on('click' , function(e){	//배경을 클릭하면 레이어를 사라지게 하는 이벤트 핸들러
+        $('.layer').hide();
+        //e.preventDefault();
+    });
+    
+    var data;
+    function name(){
+        data="클릭한데이터";
+    }
+    
+    function layerpop(){
+      $document.all("change_div").innerHTML(data);
+    }
+    
+
+});	
+</script>
+
+</body>
+</html>

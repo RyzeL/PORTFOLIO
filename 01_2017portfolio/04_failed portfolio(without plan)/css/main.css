@@ -1,0 +1,51 @@
+@charset "utf-8";
+/********************************************
+|-------------------main.css-------------------|          
+|Explanation : 메인 스타일에 대한 css 파일
+|Producer : JinSeul Choi 
+|FirstFoundationDate : 2017.01.09
+|RsentUpDate : 2017.10.25
+|Index : 
+1::: MainVisual 2::: MainContents
+|Rule : 
+1::: 각 파일에 대한 설명의 타이틀은 파스칼표기법을 따른다.
+2::: 아이디와 클래스명은 카멜표기법을 따른다.
+********************************************/
+/* ---------------------- 1::: MainVisual ---------------------- */
+#mainCon {
+	padding: 7.5rem 0 2.5rem 0;
+    background-color: #f9f7f6;
+}
+.mainSlideBg {
+    height: 34rem;
+    padding-top: 3rem;
+    background-image: url(../images/mainSlideBg.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+.title01 {
+    color: #3f3f3f;
+    font: 1.2rem 'Raleway';
+    line-height: 1.2rem;
+    padding-bottom: 1.4rem;
+    font-weight: 700;
+}
+.titleBullet01 {
+    display: inline-block;
+    width: 1.13rem;
+    height: 1rem;
+    padding-right: 0.5rem;	
+    background-image: url(../images/titleBullet01.png);
+    background-repeat: no-repeat;
+    vertical-align: -0.1rem;
+}
+.slideBox {
+    height: 34rem;
+    margin: 0 auto;
+    background-color: #054;
+    opacity: 0.5;
+}
+/* ---------- * ---------- */
+/* ---------------------- 2::: MainContents ---------------------- */
+/* ---------- * ---------- */

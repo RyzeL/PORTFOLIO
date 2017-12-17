@@ -1,0 +1,786 @@
+
+/* ---------------------- font ---------------------- */
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+@font-face {
+    font-family:'Raleway-Regular';
+    src:url('Raleway-Regular.eot?#iefix') fomat('embedded-opentype'), /* ie8 호환 */
+                url('../font/Raleway-Regular.woff') format('woff');  /* ie9이상 및 웹표준 브라우저(크롬,파이폭스,사파리 등)에 적용 */
+}
+
+/* ---------------------- reset ---------------------- */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+div,
+p,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+button,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+input,
+button {
+    font-weight: 100;
+    font-size: 12px;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+fieldset,
+iframe,
+img {
+    border: 0;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.img_box img {
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+
+/* ---------------------- base ---------------------- */
+
+body {
+    font: 11px 'Raleway','Nanum Gothic';
+    color: #000;
+    line-height: 100%;
+    -webkit-text-size-adjust: none;/* 모바일 경우 */
+    overflow-x: hidden;
+    scrollbar-face-color: #2574a9;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.5s;
+}
+
+.skip_navigation a {
+    position: absolute;
+    left: 0px;
+    top: -9999px;
+}
+
+.skip_navigation a:focus {
+    display: block;
+    top: 0px;
+    width: 100%;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    z-index: 150;
+}
+
+.blind {
+    position: absolute;
+    left: 0px;
+    top: -9999px;
+}
+
+
+/* ---------------------- common ---------------------- */
+
+/* width */
+.w10 {
+    width: 10% !important;
+}
+.w20 {
+    width: 20% !important;
+}
+.w30 {
+    width: 30% !important;
+}
+.w40 {
+    width: 40% !important;
+}
+.w50 {
+    width: 50% !important;
+}
+.w60 {
+    width: 60% !important;
+}
+.w70 {
+    width: 70% !important;
+}
+.w80 {
+    width: 80% !important;
+}
+.w90 {
+    width: 90% !important;
+}
+.w100 {
+    width: 100% !important;
+}
+
+
+/* height */
+.t10 {
+    height: 10% !important;
+}
+.t20 {
+    height: 20% !important;
+}
+.t30 {
+    height: 30% !important;
+}
+.t40 {
+    height: 40% !important;
+}
+.t50 {
+    height: 50% !important;
+}
+.t60 {
+    height: 60% !important;
+}
+.t70 {
+    height: 70% !important;
+}
+.t80 {
+    height: 80% !important;
+}
+.t90 {
+    height: 90% !important;
+}
+.t100 {
+    height: 100% !important;
+}
+
+
+/* margin */
+
+/* margin-reset */
+.mg0 {
+    margin: 0 !important;
+}
+.mt0 {
+    margin-top: 0 !important;
+}
+.mr0 {
+    margin-right: 0 !important;
+}
+.mb0 {
+    margin-bottom: 0 !important;
+}
+.ml0 {
+    margin-left: 0 !important;
+}
+
+/* margin-top */
+.mt10 {
+    margin-top: 10px !important;
+}
+.mt20 {
+    margin-top: 20px !important;
+}
+.mt30 {
+    margin-top: 30px !important;
+}
+.mt40 {
+    margin-top: 40px !important;
+}
+.mt50 {
+    margin-top: 50px !important;
+}
+.mt60 {
+    margin-top: 60px !important;
+}
+.mt70 {
+    margin-top: 70px !important;
+}
+.mt80 {
+    margin-top: 80px !important;
+}
+.mt90 {
+    margin-top: 90px !important;
+}
+.mt100 {
+    margin-top: 100px !important;
+}
+
+/* margin-right */
+.mr10 {
+    margin-right: 10px !important;
+}
+.mr20 {
+    margin-right: 20px !important;
+}
+.mr30 {
+    margin-right: 30px !important;
+}
+.mr40 {
+    margin-right: 40px !important;
+}
+.mr50 {
+    margin-right: 50px !important;
+}
+.mr60 {
+    margin-right: 60px !important;
+}
+.mr70 {
+    margin-right: 70px !important;
+}
+.mr80 {
+    margin-right: 80px !important;
+}
+.mr90 {
+    margin-right: 90px !important;
+}
+.mr100 {
+    margin-right: 100px !important;
+}
+
+/* margin-bottom */
+.mb10 {
+    margin-bottom: 10px !important;
+}
+.mb20 {
+    margin-bottom: 20px !important;
+}
+.mb30 {
+    margin-bottom: 30px !important;
+}
+.mb40 {
+    margin-bottom: 40px !important;
+}
+.mb50 {
+    margin-bottom: 50px !important;
+}
+.mb60 {
+    margin-bottom: 60px !important;
+}
+.mb70 {
+    margin-bottom: 70px !important;
+}
+.mb80 {
+    margin-bottom: 80px !important;
+}
+.mb90 {
+    margin-bottom: 90px !important;
+}
+.mb100 {
+    margin-bottom: 100px !important;
+}
+
+/* margin-left */
+.ml10 {
+    margin-left: 10px !important;
+}
+.ml20 {
+    margin-left: 20px !important;
+}
+.ml30 {
+    margin-left: 30px !important;
+}
+.ml40 {
+    margin-left: 40px !important;
+}
+.ml50 {
+    margin-left: 50px !important;
+}
+.ml60 {
+    margin-left: 60px !important;
+}
+.ml70 {
+    margin-left: 70px !important;
+}
+.ml80 {
+    margin-left: 80px !important;
+}
+.ml90 {
+    margin-left: 90px !important;
+}
+.ml100 {
+    margin-left: 100px !important;
+}
+
+/* padding */
+
+/* padding-reset */
+.pd0 {
+    padding: 0 !important;
+}
+.pt0 {
+    padding-top: 0 !important;
+}
+.pr0 {
+    padding-right: 0 !important;
+}
+.pb0 {
+    padding-bottom: 0 !important;
+}
+.pl0 {
+    padding-left: 0 !important;
+}
+
+/* padding-top */
+.pt07 {
+    padding-top: 7px !important;
+}
+.pt10 {
+    padding-top: 10px !important;
+}
+.pt15 {
+    padding-top: 15px !important;
+}
+.pt20 {
+    padding-top: 20px !important;
+}
+.pt30 {
+    padding-top: 30px !important;
+}
+.pt35 {
+    padding-top: 35px !important;
+}
+.pt40 {
+    padding-top: 40px !important;
+}
+.pt50 {
+    padding-top: 50px !important;
+}
+.pt60 {
+    padding-top: 60px !important;
+}
+.pt70 {
+    padding-top: 70px !important;
+}
+.pt80 {
+    padding-top: 80px !important;
+}
+.pt90 {
+    padding-top: 90px !important;
+}
+.pt100 {
+    padding-top: 100px !important;
+}
+
+/* padding-right */
+.pr10 {
+    padding-right: 10px !important;
+}
+.pr13 {
+    padding-right: 13px !important;
+}
+.pr20 {
+    padding-right: 20px !important;
+}
+.pr30 {
+    padding-right: 30px !important;
+}
+.pr40 {
+    padding-right: 40px !important;
+}
+.pr50 {
+    padding-right: 50px !important;
+}
+.pr60 {
+    padding-right: 60px !important;
+}
+.pr70 {
+    padding-right: 70px !important;
+}
+.pr80 {
+    padding-right: 80px !important;
+}
+.pr90 {
+    padding-right: 90px !important;
+}
+.pr100 {
+    padding-right: 100px !important;
+}
+
+/* padding-bottom */
+.pb07 {
+    padding-bottom: 7px !important;
+}
+.pb10 {
+    padding-bottom: 10px !important;
+}
+.pb13 {
+    padding-bottom: 13px !important;
+}
+.pb15 {
+    padding-bottom: 15px !important;
+}
+.pb20 {
+    padding-bottom: 20px !important;
+}
+.pb25 {
+    padding-bottom: 25px !important;
+}
+.pb30 {
+    padding-bottom: 30px !important;
+}
+.pb40 {
+    padding-bottom: 40px !important;
+}
+.pb50 {
+    padding-bottom: 50px !important;
+}
+.pb60 {
+    padding-bottom: 60px !important;
+}
+.pb70 {
+    padding-bottom: 70px !important;
+}
+.pb80 {
+    padding-bottom: 80px !important;
+}
+.pb90 {
+    padding-bottom: 90px !important;
+}
+.pb100 {
+    padding-bottom: 100px !important;
+}
+
+/* padding-left */
+.pl10 {
+    padding-left: 10px !important;
+}
+.pl20 {
+    padding-left: 20px !important;
+}
+.pl30 {
+    padding-left: 30px !important;
+}
+.pl40 {
+    padding-left: 40px !important;
+}
+.pl50 {
+    padding-left: 50px !important;
+}
+.pl60 {
+    padding-left: 60px !important;
+}
+.pl70 {
+    padding-left: 70px !important;
+}
+.pl80 {
+    padding-left: 80px !important;
+}
+.pl90 {
+    padding-left: 90px !important;
+}
+.pl100 {
+    padding-left: 100px !important;
+}
+
+
+/* border-reset */
+
+.bor_0 {
+    border: 0 !important;
+}
+
+.bor_t_0 {
+    border-top: 0 !important;
+}
+
+.bor_r_0 {
+    border-right: 0 !important;
+}
+
+.bor_b_0 {
+    border-bottom: 0 !important;
+}
+
+.bor_l_0 {
+    border-left: 0 !important;
+}
+
+
+/* text_edit */
+
+/* text-align */
+.txt_l {
+    text-align: left !important;
+}
+.txt_c {
+    text-align: center !important;
+}
+.txt_r {
+    text-align: right !important;
+}
+
+/* vertical-align */
+.ver_top {
+    vertical-align: top !important;
+}
+.ver_mid {
+    vertical-align: middle !important;
+}
+.ver_bot {
+    vertical-align: bottom !important;
+}
+
+/* text-bold */
+.txt900 {
+    font-weight: 900 !important;
+}
+.txt700 {
+    font-weight: 700 !important;
+}
+.txt500 {
+    font-weight: 500 !important;
+}
+.txt300 {
+    font-weight: 300 !important;
+}
+.txt100 {
+    font-weight: 100 !important;
+}
+
+/* letter-spacing */
+.letter-2 {
+    letter-spacing: -2px !important;
+}
+.letter-1 {
+    letter-spacing: -1px !important;
+}
+.letter0 {
+    letter-spacing: 0 !important;
+}
+.letter1 {
+    letter-spacing: 1px !important; 
+}
+.letter2 {
+    letter-spacing: 2px !important;
+}
+
+/* float_setting */
+.flo_base {
+    float: inherit !important;
+}
+.flo_l {
+    float: left !important;
+}
+.flo_r {
+    float: right !important;
+}
+.clear_b {
+    clear: both !important;
+}
+
+/* ellipsis_setting */
+.ellipsis {
+    display: inline-block;
+    width: 70%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* IE, Safari */
+    -o-text-overflow: ellipsis;
+    /* Opera under 10.7 */
+    overflow: hidden;
+    /* "overflow" value must be different from "visible" */
+/*    -moz-binding: url('ellipsis.xml#ellipsis');*/
+    position: relative;
+    top: 7px;
+}
+
+
+/* input_setting */
+input[type="text"] {
+    padding-left: 7px;
+}
+
+input[type="radio"] {
+    vertical-align: top;
+}
+
+input[type="text"],
+input[type="checkbox"] {
+    vertical-align: middle;
+}
+
+select { 
+    padding-left:7px; 
+    vertical-align: top;
+    /* -- edit arrow -- */
+    /* Browser initialization */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color:#fff;
+    background-image:url(../images/select_bg.png);
+    background-repeat:no-repeat;
+    background-position:right center;
+    /* -- the end edit arrow -- */ 
+}
+
+
+/* custom_point */
+.point_color0 {
+    color:#2574a9 !important;
+}
+
+/* scrollbar_setting */
+::-webkit-scrollbar {
+      width: 10px;
+} /* this targets the default scrollbar (compulsory) */
+
+::-webkit-scrollbar-track {
+      background-color: #fff;
+} /* the new scrollbar will have a flat appearance with the set background color */
+ 
+::-webkit-scrollbar-thumb {
+      background-color: rgba(37, 116, 169, 0.2); 
+} /* this will style the thumb, ignoring the track */
+ 
+::-webkit-scrollbar-button {
+      background-color: #fff;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+ 
+
+
+/* etc */
+.curPoint {
+    cursor: pointer;
+}
+
+.over_hidden {
+    overflow: hidden;
+}
+
+/* ---------------------- layout ---------------------- */
+
+/* header */
+#header {
+    width: 100%;
+    height: 70px;
+    background: url(../images/bg_black.png);
+    z-index: 500;
+}
+
+#header > .inner {
+    position: relative;
+    max-width: 1152px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+#header > .inner > h1 {
+    position: absolute;
+    left: 0px;
+    top: 5px;
+}
+
+nav {
+    overflow: hidden;
+    padding-top: 40px;
+    text-align: center;
+}
+
+nav .gnb{
+    overflow: hidden;
+    display: inline-block;
+}
+
+nav .gnb > li {
+    float: left;
+    margin-left: 99px;   
+}
+
+nav .gnb > li:first-child {
+    margin-left: 0;
+}
+
+nav .gnb > li > a {
+    display: inline-block;
+    color: #d7d7d7;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+nav .gnb > li > a:hover {
+    color: #fff;
+}
+
+/**/
+
+
+/* footer */
+#footer .inner {
+    max-width: 1152px;
+    height: 70px;
+    margin: 0 auto;
+    background: url(../images/line_footer.png);
+    background-repeat: repeat-x;
+}
+
+.f_info_box {
+    padding-top: 20px;
+}
+
+.f_info_box .copyright {
+    color: #afafaf;
+    font-size: 11px;
+    line-height: 23px;
+}
+/**/
+
+/* top */
+.top {
+    display: none;
+    z-index: 50;
+    position: fixed;
+    right: 2%;
+    bottom: 5%;
+    width: 50px;
+    line-height: 50px;
+    color: #2574a9 !important;
+    font-size: 13px;
+    font-weight: 700;
+    border: 1px solid #2574a9;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.top:hover,
+.top:focus {
+    background: #2574a9;
+    color: #fff !important;
+}
+/**/

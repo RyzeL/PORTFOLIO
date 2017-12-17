@@ -1,0 +1,391 @@
+@charset "utf-8";
+/********************************************
+|-------------------sub.css-------------------|          
+|Explanation : 서브 스타일에 대한 css 파일
+|Producer : JinSeul Choi 
+|FirstFoundationDate : 2017.01.09
+|RsentUpDate : 2017.10.25
+|Index : 
+1::: SubCommon 2::: SubContents
+|Rule : 
+1::: 각 파일에 대한 설명의 타이틀은 파스칼표기법을 따른다.
+2::: 아이디와 클래스명은 카멜표기법을 따른다.
+********************************************/
+/* ---------------------- 1::: SubCommon ---------------------- */
+/* ---------- subCon ---------- */
+#subCon {
+    margin-top: 72px;   
+}
+#subCon .subTitleBox {
+    padding-top: 40px;
+}
+.subTitle {
+    padding-bottom: 15px;
+    font-family: 'Raleway';
+    color: #000;
+    font-size: 0.5rem; 
+    line-height: 1rem;
+}
+.subTitle2 {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #dcdcdc;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+.subTitle3 {
+    padding-bottom: 15px;
+    color: #000;
+    font-size:1rem;
+    font-weight: 700;
+    line-height: 1.7rem;
+}
+.subTitle3 a:hover {
+    text-decoration: underline;
+}
+.subTitle4 {
+    padding: 0 0 10px 10px;
+    color: #1a1a1a;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.3rem;
+}
+.listTitle {
+    position: relative;
+    padding: 0 0 0 19px;
+    color: #292929;
+    font-size: 0.92rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+}
+.infoListSub {
+    padding: 15px 0;
+}
+.infoListSub li {
+    position: relative;
+    padding: 0 0 10px 15px;
+    color: #5d5a5a;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+}
+.date {
+    padding-left: 10px;
+    color: #666;
+    font-size: 0.7rem;
+    font-weight: 500;
+    line-height: 1rem;
+    vertical-align: bottom;
+}
+.workinfoTxt {
+    padding: 20px 0 40px 0;
+    color: #000;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5rem;  
+}
+.dot {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin-right:8px;
+    background-color: #000;
+    vertical-align: 3px;
+}
+.line1 {
+    position: absolute;
+    left: 2px;
+    top: 15px;
+    width: 10px;
+    height: 1px;
+    vertical-align: 2px;
+    margin-right: 7px;
+    border-top: 1px solid #868686;
+}
+.line2 {
+    position: absolute;
+    left: 5px;
+    top: 14px;
+    width: 4px;
+    height: 1px;
+    vertical-align: 2px;
+    margin-right: 7px;
+    border-top: 1px solid #868686;
+}
+.infoBox {
+    margin: 0 0px 40px 0;
+    padding: 20px 15px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+
+/* ---------------------- 2::: SubContents ---------------------- */
+/* ---------- WorkMarkup ---------- */
+/* 국립백두대간 수목원 퍼블 레이아웃 마크업 */
+.markup {
+    font-family: 'Raleway';
+    position: relative;
+    overflow: hidden;
+}
+.markHeader {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 72px;    
+    background-color: rgba(240, 197, 197, 0.3);
+}
+.markFooter {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 95px; 
+    background-color: rgba(240, 197, 197, 0.3);
+}
+.markSubFooter {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 25px; 
+    background-color: rgba(240, 197, 197, 0.3);
+}
+.markCon {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 78px;
+    height: 350px;
+    background-color: rgba(179, 206, 237, 0.3);
+}
+.markConSub {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 78px;
+    height: 419px;
+    background-color: rgba(179, 206, 237, 0.3);
+}
+.markHeaderTitle {
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    display: inline-block;
+    color: #515151;
+    font-size: 0.8rem;
+}
+.markFooterTitle {
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    display: inline-block;
+    color: #515151;
+    font-size: 0.8rem;
+}
+.markConTitle {
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    display: inline-block;
+    color: #515151;
+    font-size: 0.8rem;
+}
+.markHeader > .innerBox {
+    position: relative;
+    width: 100%;
+    height: 38px;
+    border: 1px solid #f73030;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #f73030;
+}
+.innerBox > span {
+    position: absolute;
+    left: 85px;
+    padding-top: 7px;
+}
+.innerBox > .inner {
+    position: relative;
+    width: 63%;
+    height: 24px;
+    margin: 8px auto;
+    border: 1px solid #652323;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #652323;
+}
+.markFooter > .inner {
+    position: relative;
+    width: 63%;
+    height: 24px;
+    margin: 0 auto;
+    border: 1px solid #652323;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #652323;
+}
+.markSubFooter > .inner {
+    position: relative;
+    width: 63%;
+    height: 24px;
+    margin: 10px auto;
+    border: 1px solid #652323;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #652323;
+}
+.markMainConinner {
+    position: relative;
+    width: 63%;
+    height: 333px;
+    margin: 4px auto;
+    border: 1px solid #1178f0;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #1178f0;
+}
+.markSubConinner {
+    position: relative;
+    width: 63%;
+    height: 408px;
+    margin: 4px auto;
+    border: 1px solid #1178f0;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #1178f0;
+}
+.innerBox > .inner > span {
+    position: absolute;
+    left: 5px;
+    top: 3px;
+}
+.markFooter > .inner > span {
+    position: absolute;
+    left: 5px;
+    top: 3px;
+}
+.markMainConinner > span {
+    position: absolute;
+    left: 5px;
+    top: 3px;
+}
+.markSubConinner > span {
+    position: absolute;
+    left: 5px;
+    top: 3px;
+}
+.markMainInnerleft {
+    float: left;
+    position: relative;
+    width: 65%;
+    height: 300px;
+    margin: 20px 5px 5px 5px;
+    border: 1px solid #193658;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #193658;
+}
+.markSidebar {
+    float: left;
+    position: relative;
+    width: 15%;
+    height: 380px;
+    margin: 17px 5px 5px 5px;
+    border: 1px solid #193658;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #193658;
+}
+.markMainInnerright {
+    float: right;
+    position: relative;
+    width: 31%;
+    height: 300px;
+    margin: 20px 5px 5px 5px;
+    border: 1px solid #193658;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #193658;
+}
+.markContents {
+    float: right;
+    position: relative;
+    width: 81%;
+    height: 380px;
+    margin: 17px 5px 5px 5px;
+    border: 1px solid #193658;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #193658;
+}
+.mainInnerTxt {
+    position: absolute;
+    left: 5px;
+    top: 7px;
+}
+.markconnectBox {
+    position: absolute;
+    right: 142px;
+    top: 88px;
+    width: 37px;
+    height: 108px;
+    border: 1px solid #276e2b;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #276e2b;
+}
+.markconnectBox2 {
+    position: absolute;
+    right: 142px;
+    top: 208px;
+    width: 37px;
+    height: 55px;
+    border: 1px solid #276e2b;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #276e2b;
+}
+.markLineTop {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 18px;    
+    background-color: rgba(240, 197, 197, 0.8);
+}
+.markWrapBox {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 18px;
+    height: 411px;
+    background-color: rgba(179, 206, 237, 0.8);
+}
+.markLeftBox {
+    float: left;
+    position: relative;
+    width: 15%;
+    height: 370px;
+    margin: 17px 5px 5px 5px;
+    border: 1px solid #193658;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #193658;
+}
+.markRightBox {
+    float: right;
+    position: relative;
+    width: 81%;
+    height: 370px;
+    margin: 17px 5px 5px 5px;
+    border: 1px solid #193658;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #193658;
+}
+/**/
