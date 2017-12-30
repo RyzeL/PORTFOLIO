@@ -1,0 +1,279 @@
+/****************************************************************************************  
+|Explanation : File for browser environment reset and style.
+|Producer : JinSeul Choi 
+|FoundationDate : 2017.12.26
+|Index : 
+|1::: VariableSetting
+|1-1:::PersentVariable
+|1-2::: StyleVariable
+|2::: Font 
+|3::: Reset 
+|4::: Base 
+|5::: LayOut 
+|5-1::: Header 
+|5-2::: Footer
+|5-3::: MainPage
+|5-4::: SubPage
+|5-4-1::: Project
+|5-4-2::: About
+|5-4-3::: Contact
+|5-5::: Top
+|6::: MediaQuery
+|Info : I have worked with reference to the airbnb css manual shared by feather hubs.
+(https://github.com/airbnb/css) 
+1::: The class name was created using Pascal notation, created by the BEM methodology, and the common part is another class
+The OOCSS methodology was also used in combination.
+2::: If possible, avoid using the ID selector.
+3::: I used two spaces instead of tab.
+****************************************************************************************/
+/* ---------------------- ////// 1::: VariableSetting ////// ---------------------- */
+/* ---------------------- 1-1::: PersentVariable ---------------------- */
+/* ---------------------- 1-2::: StyleVariable ---------------------- */
+/* ---------------------- ////// 2::: Font ////// ---------------------- */
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("Noto Sans KR.eot?#iefix") fomat("embedded-opentype"), url("../font/Noto Sans KR.woff") format("woff"); }
+@font-face {
+  font-family: 'Raleway';
+  src: url("Raleway.eot?#iefix") fomat("embedded-opentype"), url("../font/Raleway.woff") format("woff"); }
+/* ---------------------- ////// 3::: Reset ////// ---------------------- */
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+body,
+div,
+p,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+button,
+input {
+  margin: 0;
+  padding: 0; }
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+input,
+button {
+  font-size: 1rem; }
+
+ul,
+li,
+ol {
+  list-style: none; }
+
+fieldset,
+iframe,
+img {
+  border: 0; }
+
+img {
+  max-width: 100%;
+  vertical-align: middle; }
+
+table {
+  border-collapse: collapse; }
+
+/* ---------------------- ////// 4::: Base ////// ---------------------- */
+body {
+  font: 1rem 'Noto Sans KR';
+  color: #404040;
+  line-height: 100%;
+  letter-spacing: -0.01rem;
+  -webkit-text-size-adjust: none; }
+
+a {
+  text-decoration: none;
+  color: #000;
+  letter-spacing: -0.01rem; }
+
+.skip_navigation a {
+  position: absolute;
+  left: 0px;
+  top: -9999px; }
+
+.skip_navigation a:focus {
+  display: block;
+  top: 0px;
+  width: 100%;
+  line-height: 1rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  background: #fff;
+  border-bottom: 1px solid #616161;
+  color: #000;
+  text-align: center;
+  z-index: 2; }
+
+.blind {
+  position: absolute;
+  left: 0px;
+  top: -9999px; }
+
+/* ---------------------- ////// 5::: LayOut ////// ---------------------- */
+/* ---------------------- 5-1::: Header & Footer ---------------------- */
+.SiteTitle, .Header, .Footer {
+  background-color: #f9f7f6;
+  box-sizing: border-box; }
+
+.Inner, .SubVisualInner, .SubVisualInner-project_sub {
+  position: relative;
+  max-width: 60%;
+  height: 100%;
+  margin: 0 auto; }
+
+/* ---------------------- 5-2::: Header ---------------------- */
+.Header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 4.3rem;
+  border-bottom: 1px solid #e3d0c7; }
+
+.Header__logo {
+  position: absolute;
+  left: 0;
+  top: 1.3rem;
+  font: 1.4rem 'Raleway';
+  color: #000;
+  font-weight: 500;
+  letter-spacing: -0.05rem; }
+
+.Menu {
+  position: absolute;
+  right: 0;
+  top: 1.6rem;
+  overflow: hidden; }
+
+.Menu__list {
+  float: left;
+  padding-left: 3.8rem;
+  background-image: url(../images/boundary_bar.gif);
+  background-repeat: no-repeat;
+  background-position: 1.9rem center; }
+  .Menu__list a {
+    font: 1rem 'Raleway';
+    color: #a59e9d;
+    font-weight: 400; }
+  .Menu__list a:hover,
+  .Menu__list a:focus {
+    color: #000;
+    font-weight: 400; }
+
+.Menu__list-first {
+  padding-left: 0;
+  background-image: none; }
+
+/* ---------------------- 5-3::: Footer ---------------------- */
+.Footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5.1rem;
+  border-top: 1px solid #e3d0c7; }
+
+.Footer__box {
+  float: left;
+  width: 33.3%;
+  height: 100%;
+  font-family: 'Raleway'; }
+
+.Footer__box__copyright, .Footer__box__txt {
+  padding-top: 2rem;
+  color: #b4aeae;
+  font-size: 0.8rem; }
+
+.Footer__box__txt {
+  text-align: center; }
+
+.SnsBox,
+.ContactBox {
+  overflow: hidden; }
+
+.SnsBox {
+  padding-top: 0.8rem; }
+
+.SnsBox__list, .ContactBox__list {
+  float: right;
+  padding-left: 1.2rem;
+  text-align: right; }
+
+.ContactBox {
+  padding-top: 0.6rem; }
+
+.ContactBox__link {
+  color: #000;
+  font-size: 0.8rem;
+  font-weight: 600; }
+
+/* ---------------------- 5-4::: MainPage ---------------------- */
+/**/
+/* ---------------------- 5-5::: SubPage ---------------------- */
+.SubVisual {
+  width: 100%;
+  height: 7.5rem;
+  margin-top: 4.3rem;
+  background-color: #6f6f6f; }
+
+.SubVisualInner, .SubVisualInner-project_sub {
+  background-repeat: no-repeat;
+  background-position: center top; }
+
+.SubVisualInner__menu_title {
+  max-width: 100%;
+  padding-top: 3.5rem;
+  color: #fff;
+  font-size: 1.8rem;
+  text-align: center;
+  white-space: nowrap; }
+
+.SubVisualInner__project_title {
+  position: absolute;
+  right: 0.3rem;
+  bottom: -2.2rem;
+  color: #fff;
+  font: 7rem 'Raleway';
+  text-align: right;
+  letter-spacing: -0.3rem;
+  opacity: 0.05; }
+
+/* ---------- 5-5-1::: Project ---------- */
+/* ---------- 5-5-2::: ProjectSub ---------- */
+.SubVisualInner-project_sub {
+  background-image: url(../images/visual_projectsub.jpg); }
+
+/* ---------- 5-5-3::: About ---------- */
+/* ---------- 5-5-4::: Contact ---------- */
+/**/
+/* ---------------------- ////// 6::: MediaQuery ////// ---------------------- */
+@media all and (max-width: 767px) {
+  /* ---------- Common ---------- */
+  /* ---------- Main ---------- */
+  /* ---------- Sub ---------- */ }
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  /* ---------- Common ---------- */
+  /* ---------- Main ---------- */
+  /* ---------- Sub ---------- */ }
+@media all and (min-width: 1600px) {
+  /* ---------- Common ---------- */
+  /* ---------- Main ---------- */
+  /* ---------- Sub ---------- */ }

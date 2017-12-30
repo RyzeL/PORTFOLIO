@@ -1,0 +1,337 @@
+@import "compass";
+/****************************************************************************************  
+|Explanation : File for browser environment reset and style.
+|Producer : JinSeul Choi 
+|FoundationDate : 2017.12.26
+|Index : 
+|1::: VariableSetting
+|1-1:::PersentVariable
+|1-2::: StyleVariable
+|2::: Font 
+|3::: Reset 
+|4::: Base 
+|5::: LayOut 
+|5-1::: Header 
+|5-2::: Footer
+|5-3::: MainPage
+|5-4::: SubPage
+|5-4-1::: Project
+|5-4-2::: About
+|5-4-3::: Contact
+|5-5::: Top
+|6::: MediaQuery
+|Info : I have worked with reference to the airbnb css manual shared by feather hubs.
+(https://github.com/airbnb/css) 
+1::: The class name was created using Pascal notation, created by the BEM methodology, and the common part is another class
+The OOCSS methodology was also used in combination.
+2::: If possible, avoid using the ID selector.
+3::: I used two spaces instead of tab.
+****************************************************************************************/
+/* ---------------------- ////// 1::: VariableSetting ////// ---------------------- */
+/* ---------------------- 1-1::: PersentVariable ---------------------- */
+$_persent-10: 10%;
+$_persent-20: 20%;
+$_persent-30: 30%;
+$_persent-40: 40%;
+$_persent-50: 50%;
+$_persent-60: 60%;
+$_persent-70: 70%;
+$_persent-80: 80%;
+$_persent-90: 90%;
+$_persent-100: 100%;
+/* ---------------------- 1-2::: StyleVariable ---------------------- */
+$_pointcolor-white: #fff;
+$_pointcolor-gray-light-third: #f4f4f4;
+$_pointcolor-gray-light-second: #e5e4e4;
+$_pointcolor-gray-light: #b4aeae;
+$_pointcolor-gray: #a59e9d;
+$_pointcolor-gray-dark: #616161;
+$_pointcolor-gray-dark-second: #404040;
+$_pointcolor-gray-dark-third: #6f6f6f;
+$_pointcolor-gray-dark-fourth: #333;
+$_pointcolor-black: #000; 
+$_pointcolor-light: #f9f7f6;
+$_pointcolor: #e3d0c7;
+$_pointcolor-dark: #b46654;
+
+/* ---------------------- ////// 2::: Font ////// ---------------------- */
+@font-face {
+    font-family:'Noto Sans KR';
+    src:url('Noto Sans KR.eot?#iefix') fomat('embedded-opentype'), 
+    //ie8 compatible
+    url('../font/Noto Sans KR.woff') format('woff');  
+    //Applied to ie9 or higher and web-standard browsers (Chrome, Pyx, Safari etc)
+}
+@font-face {
+    font-family:'Raleway';
+    src:url('Raleway.eot?#iefix') fomat('embedded-opentype'), 
+    //ie8 compatible
+    url('../font/Raleway.woff') format('woff');
+    //Applied to ie9 or higher and web-standard browsers (Chrome, Pyx, Safari etc) 
+}
+
+/* ---------------------- ////// 3::: Reset ////// ---------------------- */
+html,
+body {
+  width: $_persent-100;
+  height: $_persent-100;
+}
+body,
+div,
+p,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+button,
+input {
+  margin: 0;
+  padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+input,
+button {
+  font-size: 1rem;
+}
+ul,
+li,
+ol {
+  list-style: none;
+}
+fieldset,
+iframe,
+img {
+  border: 0;
+}
+img {
+  max-width: $_persent-100;
+  vertical-align: middle;
+}
+table {
+  border-collapse: collapse;
+}
+
+/* ---------------------- ////// 4::: Base ////// ---------------------- */
+body {
+  font: 1rem 'Noto Sans KR';
+  color: $_pointcolor-gray-dark-second;
+  line-height: $_persent-100;
+  letter-spacing: -0.01rem;
+  -webkit-text-size-adjust: none; 
+  //for mobile
+}
+a {
+  text-decoration: none;
+  color: $_pointcolor-black;
+  letter-spacing: -0.01rem;
+}
+.skip_navigation a {
+  position: absolute;
+  left: 0px;
+  top: -9999px;
+}
+.skip_navigation a:focus {
+  display: block;
+  top: 0px;
+  width: $_persent-100;
+  line-height: 1rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  background: $_pointcolor-white;
+  border-bottom: 1px solid $_pointcolor-gray-dark;
+  color: $_pointcolor-black;
+  text-align: center;
+  z-index: 2;
+}
+.blind {
+  position: absolute;
+  left: 0px;
+  top: -9999px;
+}
+
+/* ---------------------- ////// 5::: LayOut ////// ---------------------- */
+/* ---------------------- 5-1::: Header & Footer ---------------------- */
+.SiteTitle {
+  background-color:$_pointcolor-light;
+  box-sizing: border-box;
+}
+.Inner {
+  position: relative;
+  max-width: $_persent-60;
+  height: $_persent-100;
+  margin: 0 auto;
+}
+/* ---------------------- 5-2::: Header ---------------------- */
+.Header {
+  @extend .SiteTitle;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: $_persent-100;
+  height: 4.3rem;
+  border-bottom: 1px solid $_pointcolor;
+}
+.Header__logo {
+  position: absolute;
+  left: 0;
+  top: 1.3rem;  
+  font: 1.4rem 'Raleway';
+  color: $_pointcolor-black;
+  font-weight: 500;
+  letter-spacing: -0.05rem;
+}
+.Menu {
+  position: absolute;
+  right: 0;
+  top: 1.6rem;
+  overflow: hidden;
+}
+.Menu__list {
+  float: left;
+  padding-left: 3.8rem;
+  background-image: url(../images/boundary_bar.gif);
+  background-repeat: no-repeat;
+  background-position: 1.9rem center;
+  a {
+    font: 1rem 'Raleway';
+    color: $_pointcolor-gray;
+    font-weight: 400;
+  }
+  a:hover,
+  a:focus {
+    color: $_pointcolor-black;
+    font-weight: 400;
+  }
+}
+.Menu__list-first {
+  padding-left: 0;
+  background-image: none;
+}
+/* ---------------------- 5-3::: Footer ---------------------- */
+.Footer {
+  @extend .SiteTitle;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: $_persent-100;
+  height: 5.1rem;
+  border-top: 1px solid $_pointcolor;
+}
+.Footer__box {
+  float: left;
+  width: $_persent-30+3.3%;
+  height: $_persent-100;
+  font-family:'Raleway';
+}
+
+.Footer__box__copyright {
+  padding-top: 2rem;
+  color: $_pointcolor-gray-light;
+  font-size: 0.8rem;
+}
+.Footer__box__txt {
+  @extend .Footer__box__copyright;
+  text-align: center;
+}
+.SnsBox,
+.ContactBox {
+  overflow: hidden;
+}
+.SnsBox {
+  padding-top: 0.8rem;
+}
+.SnsBox__list {
+  float: right;
+  padding-left: 1.2rem;
+  text-align: right;
+}
+.ContactBox {
+  padding-top: 0.6rem;
+}
+.ContactBox__list {
+  @extend .SnsBox__list;
+}
+.ContactBox__link {
+  color: $_pointcolor-black;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+/* ---------------------- 5-4::: MainPage ---------------------- */
+/**/
+/* ---------------------- 5-5::: SubPage ---------------------- */
+.SubVisual {
+  width: $_persent-100;
+  height: 7.5rem;
+  margin-top: 4.3rem;
+  background-color: $_pointcolor-gray-dark-third;
+}
+.SubVisualInner {
+  @extend .Inner;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.SubVisualInner__menu_title {
+  max-width: $_persent-100;
+  padding-top: 3.5rem;
+  color: $_pointcolor-white;
+  font-size: 1.8rem;
+  text-align: center;
+  white-space: nowrap;
+}
+.SubVisualInner__project_title {
+  position: absolute;
+  right: 0.3rem;
+  bottom: -2.2rem;
+  color: $_pointcolor-white;
+  font: 7rem 'Raleway';
+  text-align: right;
+  letter-spacing: -0.3rem;  
+  opacity: 0.05;
+}
+/* ---------- 5-5-1::: Project ---------- */
+/* ---------- 5-5-2::: ProjectSub ---------- */
+.SubVisualInner-project_sub {
+  @extend .SubVisualInner;
+  background-image: url(../images/visual_projectsub.jpg);
+}
+/* ---------- 5-5-3::: About ---------- */
+/* ---------- 5-5-4::: Contact ---------- */
+/**/
+
+/* ---------------------- ////// 6::: MediaQuery ////// ---------------------- */
+@media all and (max-width:767px) { 
+//SmartPhone
+
+/* ---------- Common ---------- */
+/* ---------- Main ---------- */
+/* ---------- Sub ---------- */
+}
+@media all and (min-width:768px) and (max-width:1024px) { 
+//Tablet 
+
+/* ---------- Common ---------- */
+/* ---------- Main ---------- */
+/* ---------- Sub ---------- */
+}
+@media all and (min-width:1600px) { 
+//PC
+
+/* ---------- Common ---------- */
+/* ---------- Main ---------- */
+/* ---------- Sub ---------- */
+}
