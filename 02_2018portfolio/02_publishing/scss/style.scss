@@ -10,16 +10,17 @@
 |2::: Font 
 |3::: Reset 
 |4::: Base 
-|5::: LayOut 
-|5-1::: Header 
-|5-2::: Footer
-|5-3::: MainPage
-|5-4::: SubPage
-|5-4-1::: Project
-|5-4-2::: About
-|5-4-3::: Contact
-|5-5::: Top
-|6::: MediaQuery
+|5::: CommonCustom
+|6::: LayOut 
+|6-1::: Header 
+|6-2::: Footer
+|6-3::: MainPage
+|6-4::: SubPage
+|6-4-1::: Project
+|6-4-2::: About
+|6-4-3::: Contact
+|6-5::: Top
+|7::: MediaQuery
 |Info : I have worked with reference to the airbnb css manual shared by feather hubs.
 (https://github.com/airbnb/css) 
 1::: The class name was created using Pascal notation, created by the BEM methodology, and the common part is another class
@@ -107,7 +108,7 @@ h5,
 input,
 button {
   font-size: 1rem;
-  letter-spacing: -0.01rem;
+  letter-spacing: -0.05rem;
 }
 h1,
 h2,
@@ -171,11 +172,65 @@ a {
   left: 0px;
   top: -9999px;
 }
+
+/* ---------------------- ////// 5::: CommonCustom ////// ---------------------- */
+/* ---------- Display ---------- */
 .DisplayInlineBlock {
   display: inline-block !important;
 }
-/* ---------------------- ////// 5::: LayOut ////// ---------------------- */
-/* ---------------------- 5-1::: Header & Footer ---------------------- */
+/* ---------- Float ---------- */
+.FloatLeft {
+  float: left !important;
+}
+.FloatRight {
+  float: right !important;
+}
+.FloatInherit {
+  float: inherit !important;
+}
+/* ---------- Overflow ---------- */
+.OverFlowHidden {
+  overflow: hidden !important;
+}
+.OverFlowHidden-x {
+  overflow-x: hidden !important;
+}
+.OverFlowHidden-y {
+  overflow-y: hidden !important;
+}
+/* ---------- Width ---------- */
+.W10 {
+  width: $_persent-10 !important;
+}
+.W20 {
+  width: $_persent-20 !important;
+}
+.W30 {
+  width: $_persent-30 !important;
+}
+.W40 {
+  width: $_persent-40 !important;
+}
+.W50 {
+  width: $_persent-50 !important;
+}
+.W60 {
+  width: $_persent-60 !important;
+}
+.W70 {
+  width: $_persent-70 !important;
+}
+.W80 {
+  width: $_persent-80 !important;
+}
+.W90 {
+  width: $_persent-90 !important;
+}
+.W100 {
+  width: $_persent-100 !important;
+}
+/* ---------------------- ////// 6::: LayOut ////// ---------------------- */
+/* ---------------------- 6-1::: Header & Footer ---------------------- */
 .SiteTitle {
   background-color:$_pointcolor-light;
   box-sizing: border-box;
@@ -186,7 +241,7 @@ a {
   height: $_persent-100;
   margin: 0 auto;
 }
-/* ---------------------- 5-2::: Header ---------------------- */
+/* ---------------------- 6-2::: Header ---------------------- */
 .Header {
   @extend .SiteTitle;
   position: fixed;
@@ -200,7 +255,7 @@ a {
 .Header__logo {
   position: absolute;
   left: 0;
-  top: 1.3rem;  
+  top: 1.6rem;  
   font-size: 1.4rem;
   color: $_pointcolor-black;
   font-weight: 500;
@@ -233,7 +288,7 @@ a {
   padding-left: 0;
   background-image: none;
 }
-/* ---------------------- 5-3::: Footer ---------------------- */
+/* ---------------------- 6-3::: Footer ---------------------- */
 .Footer {
   @extend .SiteTitle;
   position: absolute;
@@ -281,9 +336,9 @@ a {
   font-size: 0.8rem;
   font-weight: 600;
 }
-/* ---------------------- 5-4::: MainPage ---------------------- */
+/* ---------------------- 6-4::: MainPage ---------------------- */
 /**/
-/* ---------------------- 5-5::: SubPage ---------------------- */
+/* ---------------------- 6-5::: SubPage ---------------------- */
 .SubVisual {
   width: $_persent-100;
   height: 7.5rem;
@@ -297,7 +352,7 @@ a {
 }
 .SubVisualInner__menu_title {
   max-width: $_persent-100;
-  padding-top: 3.8rem;
+  padding-top: 3.1rem;
   color: $_pointcolor-white;
   font: 1.28rem 'Noto Sans KR';
   font-weight: 500;
@@ -322,13 +377,13 @@ a {
   color: $_pointcolor-black;
   font-size: 1.21rem;
   line-height: 1.3rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 .SubContents__title-medium {
   color: $_pointcolor-gray-dark-fourth;
   font-size: 1rem;
   line-height: 1.3rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 .DotTitle-big {
   display: inline-block;
@@ -346,22 +401,60 @@ a {
   margin-right: 0.3rem;
   vertical-align: middle;
 }
-/* ---------- 5-5-1::: Project ---------- */
-/* ---------- 5-5-2::: ProjectSub ---------- */
+/* ---------- 6-5-1::: Project ---------- */
+/* ---------- 6-5-2::: ProjectSub ---------- */
 .SubVisualInner-project_sub {
   @extend .SubVisualInner;
   background-image: url(../images/visual_projectsub.jpg);
 }
 .SubContents__frame {
+  margin-bottom: 1.8rem;
   padding: 1.3rem;
   border: 2px solid $_pointcolor-gray-light-second;
   box-sizing:  border-box;
 }
-/* ---------- 5-5-3::: About ---------- */
-/* ---------- 5-5-4::: Contact ---------- */
+.SubContents__frame__bottom {
+  padding-top: 1rem;
+}
+.SubContents__frame__date {
+  padding-left: 0.7rem;
+  color: $_pointcolor-gray-dark-third;
+  font: 0.9rem 'Raleway';
+  font-weight: 600;
+}
+.SubContents__frame__con {
+  padding: 0.1rem 0 0 0.7rem;
+  color: $_pointcolor-gray-dark-second;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.2rem;  
+}
+.Contents__title_tab-2piece {
+  overflow: hidden;
+  border-top: 2px solid $_pointcolor-gray;
+  li {
+    float: left;
+    width: $_persent-50;
+    padding: 1.1rem 0;
+    background-color: $_pointcolor-white;
+    color: $_pointcolor-gray-dark;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: -0.05rem; 
+    cursor: pointer;
+  }
+}
+.Contents__title_tab__on {
+  border-bottom: 3px solid #000;
+  color: #000 !important;
+  font-weight: 600 !important;
+}
+/* ---------- 6-5-3::: About ---------- */
+/* ---------- 6-5-4::: Contact ---------- */
 /**/
 
-/* ---------------------- ////// 6::: MediaQuery ////// ---------------------- */
+/* ---------------------- ////// 7::: MediaQuery ////// ---------------------- */
 @media all and (max-width:767px) { 
 //SmartPhone
 
